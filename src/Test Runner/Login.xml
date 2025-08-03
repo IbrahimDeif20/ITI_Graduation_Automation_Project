@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Demo Web Shop">
+    <test name="Functional Test for each page">
+        <classes>
+            <class name="Tests.TC02_LoginTest"/>
+        </classes>
+    </test>
+</suite>

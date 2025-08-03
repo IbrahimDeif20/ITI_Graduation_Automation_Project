@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Demo Web Shop">
+    <test name="Functional Test for each page">
+        <classes>
+            <class name="Tests.TC01_RegistrationTest"/>
+            <class name="Tests.TC02_LoginTest"/>
+            <class name="Tests.TC03_HomePageTest"/>
+            <class name="Tests.TC04_CartTest"/>
+            <class name="Tests.TC05_BooksTest"/>
+            <class name="Tests.TC06_CheckoutTest"/>
+        </classes>
+    </test>
+    </suite>
