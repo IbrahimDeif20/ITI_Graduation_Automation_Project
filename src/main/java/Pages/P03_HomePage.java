@@ -75,14 +75,12 @@ public class P03_HomePage {
         Utilities.clickOnElement(driver, searchButtonLocator);
     }
 
-    public P03_HomePage clickViewAccountDetails() {
+    public void clickViewAccountDetails() {
         Utilities.clickOnElement(driver, viewAccountDetailsLocator);
-        return this;
     }
 
-    public P03_HomePage clickAddToCartForLaptop() {
+    public void clickAddToCartForLaptop() {
         Utilities.clickOnElement(driver, laptopAddToCartLocator);
-        return this;
     }
 
     public P04_CartPage openCartPage() {

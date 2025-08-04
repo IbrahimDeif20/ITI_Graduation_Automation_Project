@@ -4,8 +4,6 @@ import Pages.P02_LoginPage;
 import Utilities.DataUtil;
 import Utilities.LogUtils;
 import Utilities.Utilities;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -20,7 +18,6 @@ import static DriverFactory.DriverFactory.*;
 
 @Listeners({IInvoked.class, ITest.class})
 public class TC02_LoginTest {
-    WebDriver driver;
 
     @BeforeMethod
     public void browserSetup() throws IOException {

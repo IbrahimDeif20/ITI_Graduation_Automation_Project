@@ -34,8 +34,7 @@ public class P02_LoginPage {
         return this;
     }
 
-    public P03_HomePage clickLogin() {
+    public void clickLogin() {
         Utilities.clickOnElement(driver, clickLoginButtonLocator);
-        return new P03_HomePage(driver);
     }
 }

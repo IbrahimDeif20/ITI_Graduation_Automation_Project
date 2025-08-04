@@ -29,7 +29,7 @@ public class P04_CartPage {
         this.driver = driver;
     }
 
-    public P04_CartPage changeProductQuantity(String quantity) {
+    public void changeProductQuantity(String quantity) {
         WebElement quantityBox = Utilities.byToWebElement(driver, productQuantityLocator);
 
         Utilities.generalWait(driver)
@@ -42,14 +42,12 @@ public class P04_CartPage {
         quantityBox.sendKeys(quantity);
         quantityBox.sendKeys(Keys.ENTER);
 
-        return this;
     }
 
-    public P04_CartPage clearCart() {
+    public void clearCart() {
         WebElement quantityBox = Utilities.byToWebElement(driver, productBox);
         quantityBox.click();
         quantityBox.sendKeys(Keys.ENTER);
-        return this;
     }
 
     public double getProductPrice() {
@@ -86,15 +84,13 @@ public class P04_CartPage {
         return this;
     }
 
-    public P04_CartPage addBracelet(){
+    public void addBracelet(){
         Utilities.enterText(driver, addBraceletLength, "10");
         Utilities.clickOnElement(driver, braceletLocator);
-        return this;
     }
 
-    public P06_CheckoutPage clickCheckoutButton() {
+    public void clickCheckoutButton() {
         Utilities.clickOnElement(driver, checkoutButtonLocator);
-        return new P06_CheckoutPage(driver);
     }
 
 }

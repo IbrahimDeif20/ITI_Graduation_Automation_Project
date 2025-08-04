@@ -1,13 +1,11 @@
 package Tests;
 
-import Pages.P02_LoginPage;
 import Pages.P03_HomePage;
 import Utilities.DataUtil;
 import Utilities.Utilities;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;

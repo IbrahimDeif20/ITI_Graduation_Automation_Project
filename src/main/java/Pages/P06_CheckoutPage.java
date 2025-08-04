@@ -82,9 +82,8 @@ public class P06_CheckoutPage {
         return this;
     }
 
-    public P06_CheckoutPage clickContinueButton() {
+    public void clickContinueButton() {
         Utilities.clickOnElement(driver, continueButton);
-        return this;
     }
 
     public P06_CheckoutPage clickContinueButton2() {
@@ -115,9 +114,8 @@ public class P06_CheckoutPage {
         return this;
     }
 
-    public P06_CheckoutPage clickBackButton(){
+    public void clickBackButton(){
         Utilities.clickOnElement(driver, backButtonLocator);
-        return this;
     }
     public P06_CheckoutPage clickOrderDetailsLink() {
         Utilities.clickOnElement(driver, orderDetailsLocator);
@@ -129,9 +127,8 @@ public class P06_CheckoutPage {
         return text.replaceAll("Order #", "");
     }
 
-    public P06_CheckoutPage clickReOrderButton() {
+    public void clickReOrderButton() {
         Utilities.clickOnElement(driver, reOrderButtonLocator);
-        return this;
     }
 
 }
