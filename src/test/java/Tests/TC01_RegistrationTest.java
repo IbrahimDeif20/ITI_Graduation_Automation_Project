@@ -6,8 +6,6 @@ import Utilities.LogUtils;
 import Utilities.Utilities;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;

@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import Utilities.LogUtils;
 
-import java.time.Duration;
 import java.util.List;
 
 public class P03_HomePage {
@@ -30,8 +29,6 @@ public class P03_HomePage {
    private final By twitterIconLocator = By.linkText("Twitter");
    private final By numberOfDisplayedProductsLocator = By.cssSelector("input[value='Add to cart']");
    public static By cartLocator = By.xpath("(//span[@class='cart-label'])[1]");
-   private final By addressLocator = By.linkText("Addresses");
-   private final By deleteButtonLocator = By.xpath("//input[@value='Delete']");
    private final By notificationPopUpLocator = By.xpath("//span[@title='Close']");
 
 
@@ -132,18 +129,6 @@ public class P03_HomePage {
 
     public double retrieveLaptopPrice() {
         return Double.parseDouble(Utilities.getElementText(driver, laptopPriceLocator));
-    }
-
-    public P03_HomePage clickOnAddress(){
-        Utilities.clickOnElement(driver, addressLocator);
-        LogUtils.info("Clicked on address button");
-        return this;
-    }
-
-    public P03_HomePage clickOnDeleteButton(){
-        Utilities.clickOnElement(driver, deleteButtonLocator);
-        LogUtils.info("Clicked on Delete button");
-        return this;
     }
 
 }
