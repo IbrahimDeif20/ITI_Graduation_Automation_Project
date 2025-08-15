@@ -1,0 +1,10 @@
+{
+  "company" : "ITI",
+  "country" : "Egypt",
+  "city" : "Tanta",
+  "address1" : "EL-Helw st",
+  "address2" : "building 5",
+  "zipCode" : "12345",
+  "phoneNumber" : "0123456789",
+  "faxNumber" : "987654321"
+}

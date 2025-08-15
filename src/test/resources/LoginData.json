@@ -1,0 +1,6 @@
+{
+  "email" : "benik90219@binafex.com",
+  "password" : "Test@123",
+  "invalidEmail" : "user@@example.com",
+  "invalidPassword" : "short"
+}

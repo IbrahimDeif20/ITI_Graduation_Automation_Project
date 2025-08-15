@@ -1,0 +1,386 @@
+[INFO] 13-08-2025 18:23:46 [main] [Tests.TC01_RegistrationTest.browserSetup(TC01_RegistrationTest.java:32)] null
+[INFO] 13-08-2025 18:24:03 [main] [Tests.TC01_RegistrationTest.browserSetup(TC01_RegistrationTest.java:34)] Chrome is now opened
+[INFO] 13-08-2025 18:24:06 [main] [Tests.TC01_RegistrationTest.browserSetup(TC01_RegistrationTest.java:36)] Page is redirected to the URL
+[INFO] 13-08-2025 18:24:06 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: browserSetup
+[INFO] 13-08-2025 18:24:09 [main] [Tests.TC01_RegistrationTest.confirmedPasswordDoesNotMatch(TC01_RegistrationTest.java:88)] Registration form filled with mismatched passwords
+[INFO] 13-08-2025 18:24:09 [main] [Tests.TC01_RegistrationTest.confirmedPasswordDoesNotMatch(TC01_RegistrationTest.java:94)] Error message displayed: The password and confirmation password do not match.
+[INFO] 13-08-2025 18:24:09 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: confirmedPasswordDoesNotMatch
+[INFO] 13-08-2025 18:24:09 [main] [Listeners.ITestMethodListenerClass.onTestSuccess(ITestMethodListenerClass.java:15)] Test confirmedPasswordDoesNotMatch passed successfully.
+[INFO] 13-08-2025 18:24:10 [main] [Tests.TC01_RegistrationTest.quitBrowser(TC01_RegistrationTest.java:138)] Browser closed successfully.
+[INFO] 13-08-2025 18:24:10 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: quitBrowser
+[INFO] 13-08-2025 18:24:10 [main] [Tests.TC01_RegistrationTest.browserSetup(TC01_RegistrationTest.java:32)] null
+[INFO] 13-08-2025 18:24:11 [main] [Tests.TC01_RegistrationTest.browserSetup(TC01_RegistrationTest.java:34)] Chrome is now opened
+[INFO] 13-08-2025 18:24:13 [main] [Tests.TC01_RegistrationTest.browserSetup(TC01_RegistrationTest.java:36)] Page is redirected to the URL
+[INFO] 13-08-2025 18:24:13 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: browserSetup
+[INFO] 13-08-2025 18:24:13 [main] [Tests.TC01_RegistrationTest.invalidPasswordLength(TC01_RegistrationTest.java:68)] Registration form filled with invalid password length
+[INFO] 13-08-2025 18:24:13 [main] [Tests.TC01_RegistrationTest.invalidPasswordLength(TC01_RegistrationTest.java:71)] Error message displayed: The password should have at least 6 characters.
+[INFO] 13-08-2025 18:24:14 [main] [Tests.TC01_RegistrationTest.invalidPasswordLength(TC01_RegistrationTest.java:76)] User not redirected to confirmation page due to invalid password length
+[INFO] 13-08-2025 18:24:14 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: invalidPasswordLength
+[INFO] 13-08-2025 18:24:14 [main] [Listeners.ITestMethodListenerClass.onTestSuccess(ITestMethodListenerClass.java:15)] Test invalidPasswordLength passed successfully.
+[INFO] 13-08-2025 18:24:14 [main] [Tests.TC01_RegistrationTest.quitBrowser(TC01_RegistrationTest.java:138)] Browser closed successfully.
+[INFO] 13-08-2025 18:24:14 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: quitBrowser
+[INFO] 13-08-2025 18:24:14 [main] [Tests.TC01_RegistrationTest.browserSetup(TC01_RegistrationTest.java:32)] null
+[INFO] 13-08-2025 18:24:15 [main] [Tests.TC01_RegistrationTest.browserSetup(TC01_RegistrationTest.java:34)] Chrome is now opened
+[INFO] 13-08-2025 18:24:17 [main] [Tests.TC01_RegistrationTest.browserSetup(TC01_RegistrationTest.java:36)] Page is redirected to the URL
+[INFO] 13-08-2025 18:24:17 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: browserSetup
+[INFO] 13-08-2025 18:24:18 [main] [Tests.TC01_RegistrationTest.leaveFirstNameFieldEmpty(TC01_RegistrationTest.java:106)] Registration form submitted with empty first name field
+[INFO] 13-08-2025 18:24:19 [main] [Tests.TC01_RegistrationTest.leaveFirstNameFieldEmpty(TC01_RegistrationTest.java:113)] Error message displayed: First name is required.
+[INFO] 13-08-2025 18:24:19 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: leaveFirstNameFieldEmpty
+[INFO] 13-08-2025 18:24:19 [main] [Listeners.ITestMethodListenerClass.onTestSuccess(ITestMethodListenerClass.java:15)] Test leaveFirstNameFieldEmpty passed successfully.
+[INFO] 13-08-2025 18:24:19 [main] [Tests.TC01_RegistrationTest.quitBrowser(TC01_RegistrationTest.java:138)] Browser closed successfully.
+[INFO] 13-08-2025 18:24:19 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: quitBrowser
+[INFO] 13-08-2025 18:24:19 [main] [Tests.TC01_RegistrationTest.browserSetup(TC01_RegistrationTest.java:32)] null
+[INFO] 13-08-2025 18:24:20 [main] [Tests.TC01_RegistrationTest.browserSetup(TC01_RegistrationTest.java:34)] Chrome is now opened
+[INFO] 13-08-2025 18:24:22 [main] [Tests.TC01_RegistrationTest.browserSetup(TC01_RegistrationTest.java:36)] Page is redirected to the URL
+[INFO] 13-08-2025 18:24:22 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: browserSetup
+[INFO] 13-08-2025 18:24:23 [main] [Tests.TC01_RegistrationTest.registrationWithValidDataTC(TC01_RegistrationTest.java:50)] Registration form filled with valid data
+[INFO] 13-08-2025 18:24:24 [main] [Tests.TC01_RegistrationTest.registrationWithValidDataTC(TC01_RegistrationTest.java:56)] Registration successful, redirected to confirmation page
+[INFO] 13-08-2025 18:24:24 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: registrationWithValidDataTC
+[INFO] 13-08-2025 18:24:24 [main] [Listeners.ITestMethodListenerClass.onTestSuccess(ITestMethodListenerClass.java:15)] Test registrationWithValidDataTC passed successfully.
+[INFO] 13-08-2025 18:24:24 [main] [Tests.TC01_RegistrationTest.quitBrowser(TC01_RegistrationTest.java:138)] Browser closed successfully.
+[INFO] 13-08-2025 18:24:24 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: quitBrowser
+[INFO] 13-08-2025 18:24:24 [main] [Tests.TC01_RegistrationTest.browserSetup(TC01_RegistrationTest.java:32)] null
+[INFO] 13-08-2025 18:24:26 [main] [Tests.TC01_RegistrationTest.browserSetup(TC01_RegistrationTest.java:34)] Chrome is now opened
+[INFO] 13-08-2025 18:24:27 [main] [Tests.TC01_RegistrationTest.browserSetup(TC01_RegistrationTest.java:36)] Page is redirected to the URL
+[INFO] 13-08-2025 18:24:27 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: browserSetup
+[INFO] 13-08-2025 18:24:28 [main] [Tests.TC01_RegistrationTest.wrongFormattedEmail(TC01_RegistrationTest.java:125)] Registration form filled with wrong formatted email
+[INFO] 13-08-2025 18:24:28 [main] [Tests.TC01_RegistrationTest.wrongFormattedEmail(TC01_RegistrationTest.java:132)] Error message displayed: Wrong email
+[INFO] 13-08-2025 18:24:28 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: wrongFormattedEmail
+[INFO] 13-08-2025 18:24:28 [main] [Listeners.ITestMethodListenerClass.onTestSuccess(ITestMethodListenerClass.java:15)] Test wrongFormattedEmail passed successfully.
+[INFO] 13-08-2025 18:24:28 [main] [Tests.TC01_RegistrationTest.quitBrowser(TC01_RegistrationTest.java:138)] Browser closed successfully.
+[INFO] 13-08-2025 18:24:28 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: quitBrowser
+[INFO] 13-08-2025 18:24:28 [main] [Tests.TC02_LoginTest.browserSetup(TC02_LoginTest.java:25)] null
+[INFO] 13-08-2025 18:24:29 [main] [Tests.TC02_LoginTest.browserSetup(TC02_LoginTest.java:27)] Chrome is now opened
+[INFO] 13-08-2025 18:24:31 [main] [Tests.TC02_LoginTest.browserSetup(TC02_LoginTest.java:29)] Page is redirected to the URL
+[INFO] 13-08-2025 18:24:31 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: browserSetup
+[INFO] 13-08-2025 18:24:31 [main] [Tests.TC02_LoginTest.loginWithInvalidEmail(TC02_LoginTest.java:52)] Invalid email entered
+[INFO] 13-08-2025 18:24:31 [main] [Tests.TC02_LoginTest.loginWithInvalidEmail(TC02_LoginTest.java:53)] Password entered successfully
+[INFO] 13-08-2025 18:24:31 [main] [Tests.TC02_LoginTest.loginWithInvalidEmail(TC02_LoginTest.java:55)] Login failed with invalid email, user not redirected to home page
+[INFO] 13-08-2025 18:24:31 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: loginWithInvalidEmail
+[INFO] 13-08-2025 18:24:32 [main] [Listeners.ITestMethodListenerClass.onTestSuccess(ITestMethodListenerClass.java:15)] Test loginWithInvalidEmail passed successfully.
+[INFO] 13-08-2025 18:24:32 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: quitBrowser
+[INFO] 13-08-2025 18:24:32 [main] [Tests.TC02_LoginTest.browserSetup(TC02_LoginTest.java:25)] null
+[INFO] 13-08-2025 18:24:34 [main] [Tests.TC02_LoginTest.browserSetup(TC02_LoginTest.java:27)] Chrome is now opened
+[INFO] 13-08-2025 18:24:35 [main] [Tests.TC02_LoginTest.browserSetup(TC02_LoginTest.java:29)] Page is redirected to the URL
+[INFO] 13-08-2025 18:24:35 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: browserSetup
+[INFO] 13-08-2025 18:24:37 [main] [Tests.TC02_LoginTest.loginWithInvalidPassword(TC02_LoginTest.java:65)] Email entered successfully
+[INFO] 13-08-2025 18:24:37 [main] [Tests.TC02_LoginTest.loginWithInvalidPassword(TC02_LoginTest.java:66)] Invalid password entered
+[INFO] 13-08-2025 18:24:38 [main] [Tests.TC02_LoginTest.loginWithInvalidPassword(TC02_LoginTest.java:68)] Login failed with invalid password, user not redirected to home page
+[INFO] 13-08-2025 18:24:38 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: loginWithInvalidPassword
+[INFO] 13-08-2025 18:24:38 [main] [Listeners.ITestMethodListenerClass.onTestSuccess(ITestMethodListenerClass.java:15)] Test loginWithInvalidPassword passed successfully.
+[INFO] 13-08-2025 18:24:39 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: quitBrowser
+[INFO] 13-08-2025 18:24:39 [main] [Tests.TC02_LoginTest.browserSetup(TC02_LoginTest.java:25)] null
+[INFO] 13-08-2025 18:24:41 [main] [Tests.TC02_LoginTest.browserSetup(TC02_LoginTest.java:27)] Chrome is now opened
+[INFO] 13-08-2025 18:24:43 [main] [Tests.TC02_LoginTest.browserSetup(TC02_LoginTest.java:29)] Page is redirected to the URL
+[INFO] 13-08-2025 18:24:43 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: browserSetup
+[INFO] 13-08-2025 18:24:44 [main] [Tests.TC02_LoginTest.loginWithValidCredentials(TC02_LoginTest.java:39)] Email entered successfully
+[INFO] 13-08-2025 18:24:44 [main] [Tests.TC02_LoginTest.loginWithValidCredentials(TC02_LoginTest.java:40)] Password entered successfully
+[INFO] 13-08-2025 18:24:44 [main] [Tests.TC02_LoginTest.loginWithValidCredentials(TC02_LoginTest.java:42)] Login successful, redirected to home page
+[INFO] 13-08-2025 18:24:45 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: loginWithValidCredentials
+[INFO] 13-08-2025 18:24:45 [main] [Listeners.ITestMethodListenerClass.onTestSuccess(ITestMethodListenerClass.java:15)] Test loginWithValidCredentials passed successfully.
+[INFO] 13-08-2025 18:24:45 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: quitBrowser
+[INFO] 13-08-2025 18:24:46 [main] [Tests.TC03_HomePageTest.browserSetup(TC03_HomePageTest.java:38)] null
+[INFO] 13-08-2025 18:24:49 [main] [Tests.TC03_HomePageTest.browserSetup(TC03_HomePageTest.java:40)] Chrome is now opened
+[INFO] 13-08-2025 18:24:51 [main] [Tests.TC03_HomePageTest.browserSetup(TC03_HomePageTest.java:42)] Page is redirected to the URL
+[INFO] 13-08-2025 18:24:52 [main] [Utilities.Utilities.login(Utilities.java:102)] Browser setup completed and user logged in successfully.
+[INFO] 13-08-2025 18:24:52 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: browserSetup
+[INFO] 13-08-2025 18:24:53 [main] [Tests.TC03_HomePageTest.addToCartFromHomePage(TC03_HomePageTest.java:110)] the number displayed on cart before adding laptop is: (0)
+[INFO] 13-08-2025 18:24:54 [main] [Tests.TC03_HomePageTest.addToCartFromHomePage(TC03_HomePageTest.java:113)] the number displayed on cart after adding laptop is: (1)
+[INFO] 13-08-2025 18:24:54 [main] [Tests.TC03_HomePageTest.addToCartFromHomePage(TC03_HomePageTest.java:115)] Laptop added to cart successfully.
+[INFO] 13-08-2025 18:24:59 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: addToCartFromHomePage
+[INFO] 13-08-2025 18:24:59 [main] [Listeners.ITestMethodListenerClass.onTestSuccess(ITestMethodListenerClass.java:15)] Test addToCartFromHomePage passed successfully.
+[INFO] 13-08-2025 18:25:01 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: quitBrowser
+[INFO] 13-08-2025 18:25:02 [main] [Tests.TC03_HomePageTest.browserSetup(TC03_HomePageTest.java:38)] null
+[INFO] 13-08-2025 18:25:05 [main] [Tests.TC03_HomePageTest.browserSetup(TC03_HomePageTest.java:40)] Chrome is now opened
+[INFO] 13-08-2025 18:25:07 [main] [Tests.TC03_HomePageTest.browserSetup(TC03_HomePageTest.java:42)] Page is redirected to the URL
+[INFO] 13-08-2025 18:25:10 [main] [Utilities.Utilities.login(Utilities.java:102)] Browser setup completed and user logged in successfully.
+[INFO] 13-08-2025 18:25:10 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: browserSetup
+[INFO] 13-08-2025 18:25:10 [main] [Tests.TC03_HomePageTest.checkFooterSize(TC03_HomePageTest.java:134)] Expected footer size is 22 and the actual is 22
+[INFO] 13-08-2025 18:25:10 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: checkFooterSize
+[INFO] 13-08-2025 18:25:10 [main] [Listeners.ITestMethodListenerClass.onTestSuccess(ITestMethodListenerClass.java:15)] Test checkFooterSize passed successfully.
+[INFO] 13-08-2025 18:25:12 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: quitBrowser
+[INFO] 13-08-2025 18:25:12 [main] [Tests.TC03_HomePageTest.browserSetup(TC03_HomePageTest.java:38)] null
+[INFO] 13-08-2025 18:25:14 [main] [Tests.TC03_HomePageTest.browserSetup(TC03_HomePageTest.java:40)] Chrome is now opened
+[INFO] 13-08-2025 18:25:17 [main] [Tests.TC03_HomePageTest.browserSetup(TC03_HomePageTest.java:42)] Page is redirected to the URL
+[INFO] 13-08-2025 18:25:19 [main] [Utilities.Utilities.login(Utilities.java:102)] Browser setup completed and user logged in successfully.
+[INFO] 13-08-2025 18:25:19 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: browserSetup
+[INFO] 13-08-2025 18:25:20 [main] [Tests.TC03_HomePageTest.checkLogoutButton(TC03_HomePageTest.java:61)] Logout successful, redirected to home page.
+[INFO] 13-08-2025 18:25:20 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: checkLogoutButton
+[INFO] 13-08-2025 18:25:20 [main] [Listeners.ITestMethodListenerClass.onTestSuccess(ITestMethodListenerClass.java:15)] Test checkLogoutButton passed successfully.
+[INFO] 13-08-2025 18:25:21 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: quitBrowser
+[INFO] 13-08-2025 18:25:21 [main] [Tests.TC03_HomePageTest.browserSetup(TC03_HomePageTest.java:38)] null
+[INFO] 13-08-2025 18:25:24 [main] [Tests.TC03_HomePageTest.browserSetup(TC03_HomePageTest.java:40)] Chrome is now opened
+[INFO] 13-08-2025 18:25:26 [main] [Tests.TC03_HomePageTest.browserSetup(TC03_HomePageTest.java:42)] Page is redirected to the URL
+[INFO] 13-08-2025 18:25:29 [main] [Utilities.Utilities.login(Utilities.java:102)] Browser setup completed and user logged in successfully.
+[INFO] 13-08-2025 18:25:29 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: browserSetup
+[INFO] 13-08-2025 18:25:29 [main] [Tests.TC03_HomePageTest.checkNumbersOfDisplayedItems(TC03_HomePageTest.java:124)] Expected number of items is 6 and the actual is 6
+[INFO] 13-08-2025 18:25:30 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: checkNumbersOfDisplayedItems
+[INFO] 13-08-2025 18:25:30 [main] [Listeners.ITestMethodListenerClass.onTestSuccess(ITestMethodListenerClass.java:15)] Test checkNumbersOfDisplayedItems passed successfully.
+[INFO] 13-08-2025 18:25:31 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: quitBrowser
+[INFO] 13-08-2025 18:25:31 [main] [Tests.TC03_HomePageTest.browserSetup(TC03_HomePageTest.java:38)] null
+[INFO] 13-08-2025 18:25:33 [main] [Tests.TC03_HomePageTest.browserSetup(TC03_HomePageTest.java:40)] Chrome is now opened
+[INFO] 13-08-2025 18:25:35 [main] [Tests.TC03_HomePageTest.browserSetup(TC03_HomePageTest.java:42)] Page is redirected to the URL
+[INFO] 13-08-2025 18:25:37 [main] [Utilities.Utilities.login(Utilities.java:102)] Browser setup completed and user logged in successfully.
+[INFO] 13-08-2025 18:25:37 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: browserSetup
+[INFO] 13-08-2025 18:25:37 [main] [Pages.P03_HomePage.checkFaceBookRedirection(P03_HomePage.java:107)] The current tab URL is: https://demowebshop.tricentis.com/
+[INFO] 13-08-2025 18:25:40 [main] [Pages.P03_HomePage.checkFaceBookRedirection(P03_HomePage.java:114)] The new tab URL is: https://www.facebook.com/nopCommerce
+[INFO] 13-08-2025 18:25:40 [main] [Tests.TC03_HomePageTest.checkRedirectionToFceBook(TC03_HomePageTest.java:143)] Redirection to Facebook successful.
+[INFO] 13-08-2025 18:25:41 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: checkRedirectionToFceBook
+[INFO] 13-08-2025 18:25:41 [main] [Listeners.ITestMethodListenerClass.onTestSuccess(ITestMethodListenerClass.java:15)] Test checkRedirectionToFceBook passed successfully.
+[INFO] 13-08-2025 18:25:41 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: quitBrowser
+[INFO] 13-08-2025 18:25:42 [main] [Tests.TC03_HomePageTest.browserSetup(TC03_HomePageTest.java:38)] null
+[INFO] 13-08-2025 18:25:44 [main] [Tests.TC03_HomePageTest.browserSetup(TC03_HomePageTest.java:40)] Chrome is now opened
+[INFO] 13-08-2025 18:25:45 [main] [Tests.TC03_HomePageTest.browserSetup(TC03_HomePageTest.java:42)] Page is redirected to the URL
+[INFO] 13-08-2025 18:25:46 [main] [Utilities.Utilities.login(Utilities.java:102)] Browser setup completed and user logged in successfully.
+[INFO] 13-08-2025 18:25:46 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: browserSetup
+[INFO] 13-08-2025 18:25:47 [main] [Pages.P03_HomePage.checkTwitterRedirection(P03_HomePage.java:120)] The current tab URL is: https://demowebshop.tricentis.com/
+[INFO] 13-08-2025 18:25:54 [main] [Pages.P03_HomePage.checkTwitterRedirection(P03_HomePage.java:127)] The new tab URL is: https://x.com/nopCommerce
+[INFO] 13-08-2025 18:25:54 [main] [Tests.TC03_HomePageTest.checkRedirectionToTwitter(TC03_HomePageTest.java:151)] Redirection to Twitter successful.
+[INFO] 13-08-2025 18:25:54 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: checkRedirectionToTwitter
+[INFO] 13-08-2025 18:25:54 [main] [Listeners.ITestMethodListenerClass.onTestSuccess(ITestMethodListenerClass.java:15)] Test checkRedirectionToTwitter passed successfully.
+[INFO] 13-08-2025 18:25:55 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: quitBrowser
+[INFO] 13-08-2025 18:25:55 [main] [Tests.TC03_HomePageTest.browserSetup(TC03_HomePageTest.java:38)] null
+[INFO] 13-08-2025 18:25:58 [main] [Tests.TC03_HomePageTest.browserSetup(TC03_HomePageTest.java:40)] Chrome is now opened
+[INFO] 13-08-2025 18:26:00 [main] [Tests.TC03_HomePageTest.browserSetup(TC03_HomePageTest.java:42)] Page is redirected to the URL
+[INFO] 13-08-2025 18:26:01 [main] [Utilities.Utilities.login(Utilities.java:102)] Browser setup completed and user logged in successfully.
+[INFO] 13-08-2025 18:26:01 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: browserSetup
+[INFO] 13-08-2025 18:26:02 [main] [Tests.TC03_HomePageTest.checkSearchBar(TC03_HomePageTest.java:78)] Laptop item is displayed in search results
+[INFO] 13-08-2025 18:26:03 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: checkSearchBar
+[INFO] 13-08-2025 18:26:03 [main] [Listeners.ITestMethodListenerClass.onTestSuccess(ITestMethodListenerClass.java:15)] Test checkSearchBar passed successfully.
+[INFO] 13-08-2025 18:26:03 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: quitBrowser
+[INFO] 13-08-2025 18:26:03 [main] [Tests.TC03_HomePageTest.browserSetup(TC03_HomePageTest.java:38)] null
+[INFO] 13-08-2025 18:26:04 [main] [Tests.TC03_HomePageTest.browserSetup(TC03_HomePageTest.java:40)] Chrome is now opened
+[INFO] 13-08-2025 18:26:05 [main] [Tests.TC03_HomePageTest.browserSetup(TC03_HomePageTest.java:42)] Page is redirected to the URL
+[INFO] 13-08-2025 18:26:06 [main] [Utilities.Utilities.login(Utilities.java:102)] Browser setup completed and user logged in successfully.
+[INFO] 13-08-2025 18:26:06 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: browserSetup
+[INFO] 13-08-2025 18:26:07 [main] [Tests.TC03_HomePageTest.chooseCategoryTC(TC03_HomePageTest.java:70)] Selected category 'books' and verified URL.
+[INFO] 13-08-2025 18:26:07 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: chooseCategoryTC
+[INFO] 13-08-2025 18:26:07 [main] [Listeners.ITestMethodListenerClass.onTestSuccess(ITestMethodListenerClass.java:15)] Test chooseCategoryTC passed successfully.
+[INFO] 13-08-2025 18:26:08 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: quitBrowser
+[INFO] 13-08-2025 18:26:08 [main] [Tests.TC03_HomePageTest.browserSetup(TC03_HomePageTest.java:38)] null
+[INFO] 13-08-2025 18:26:09 [main] [Tests.TC03_HomePageTest.browserSetup(TC03_HomePageTest.java:40)] Chrome is now opened
+[INFO] 13-08-2025 18:26:10 [main] [Tests.TC03_HomePageTest.browserSetup(TC03_HomePageTest.java:42)] Page is redirected to the URL
+[INFO] 13-08-2025 18:26:11 [main] [Utilities.Utilities.login(Utilities.java:102)] Browser setup completed and user logged in successfully.
+[INFO] 13-08-2025 18:26:11 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: browserSetup
+[INFO] 13-08-2025 18:26:12 [main] [Tests.TC03_HomePageTest.navigateToAccountDetails(TC03_HomePageTest.java:52)] Navigated to account details page successfully.
+[INFO] 13-08-2025 18:26:12 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: navigateToAccountDetails
+[INFO] 13-08-2025 18:26:12 [main] [Listeners.ITestMethodListenerClass.onTestSuccess(ITestMethodListenerClass.java:15)] Test navigateToAccountDetails passed successfully.
+[INFO] 13-08-2025 18:26:13 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: quitBrowser
+[INFO] 13-08-2025 18:26:13 [main] [Tests.TC03_HomePageTest.browserSetup(TC03_HomePageTest.java:38)] null
+[INFO] 13-08-2025 18:26:15 [main] [Tests.TC03_HomePageTest.browserSetup(TC03_HomePageTest.java:40)] Chrome is now opened
+[INFO] 13-08-2025 18:26:16 [main] [Tests.TC03_HomePageTest.browserSetup(TC03_HomePageTest.java:42)] Page is redirected to the URL
+[INFO] 13-08-2025 18:26:17 [main] [Utilities.Utilities.login(Utilities.java:102)] Browser setup completed and user logged in successfully.
+[INFO] 13-08-2025 18:26:17 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: browserSetup
+[INFO] 13-08-2025 18:26:18 [main] [Tests.TC03_HomePageTest.searchUsingPartOfExistingTextTC(TC03_HomePageTest.java:93)] Extracted text from product: Blue and green Sneaker
+11.00
+[INFO] 13-08-2025 18:26:18 [main] [Tests.TC03_HomePageTest.searchUsingPartOfExistingTextTC(TC03_HomePageTest.java:93)] Extracted text from product: Blue Jeans
+1.00
+[INFO] 13-08-2025 18:26:18 [main] [Tests.TC03_HomePageTest.searchUsingPartOfExistingTextTC(TC03_HomePageTest.java:93)] Extracted text from product: Green and blue Sneaker
+17.56
+[INFO] 13-08-2025 18:26:18 [main] [Tests.TC03_HomePageTest.searchUsingPartOfExistingTextTC(TC03_HomePageTest.java:93)] Extracted text from product: TBlue Jeans
+1.00
+[INFO] 13-08-2025 18:26:18 [main] [Tests.TC03_HomePageTest.searchUsingPartOfExistingTextTC(TC03_HomePageTest.java:101)] Number of products displayed: 4
+[INFO] 13-08-2025 18:26:18 [main] [Tests.TC03_HomePageTest.searchUsingPartOfExistingTextTC(TC03_HomePageTest.java:102)] Number of products that contain 'blu' in their name: 4
+[INFO] 13-08-2025 18:26:19 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: searchUsingPartOfExistingTextTC
+[INFO] 13-08-2025 18:26:19 [main] [Listeners.ITestMethodListenerClass.onTestSuccess(ITestMethodListenerClass.java:15)] Test searchUsingPartOfExistingTextTC passed successfully.
+[INFO] 13-08-2025 18:26:19 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: quitBrowser
+[INFO] 13-08-2025 18:26:19 [main] [Tests.TC04_CartTest.browserSetup(TC04_CartTest.java:31)] null
+[INFO] 13-08-2025 18:26:21 [main] [Tests.TC04_CartTest.browserSetup(TC04_CartTest.java:33)] Chrome is now opened
+[INFO] 13-08-2025 18:26:22 [main] [Tests.TC04_CartTest.browserSetup(TC04_CartTest.java:35)] Page is redirected to the URL
+[INFO] 13-08-2025 18:26:23 [main] [Utilities.Utilities.login(Utilities.java:102)] Browser setup completed and user logged in successfully.
+[INFO] 13-08-2025 18:26:23 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: browserSetup
+[INFO] 13-08-2025 18:26:26 [main] [Tests.TC04_CartTest.checkLaptopExistsInCartAfterAdding(TC04_CartTest.java:48)] Laptop item is displayed in cart
+[INFO] 13-08-2025 18:26:26 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: checkLaptopExistsInCartAfterAdding
+[INFO] 13-08-2025 18:26:26 [main] [Listeners.ITestMethodListenerClass.onTestSuccess(ITestMethodListenerClass.java:15)] Test checkLaptopExistsInCartAfterAdding passed successfully.
+[INFO] 13-08-2025 18:26:26 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: quitBrowser
+[INFO] 13-08-2025 18:26:26 [main] [Tests.TC04_CartTest.browserSetup(TC04_CartTest.java:31)] null
+[INFO] 13-08-2025 18:26:28 [main] [Tests.TC04_CartTest.browserSetup(TC04_CartTest.java:33)] Chrome is now opened
+[INFO] 13-08-2025 18:26:30 [main] [Tests.TC04_CartTest.browserSetup(TC04_CartTest.java:35)] Page is redirected to the URL
+[INFO] 13-08-2025 18:26:30 [main] [Utilities.Utilities.login(Utilities.java:102)] Browser setup completed and user logged in successfully.
+[INFO] 13-08-2025 18:26:30 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: browserSetup
+[INFO] 13-08-2025 18:26:32 [main] [Tests.TC04_CartTest.changeItemQuantityInCart(TC04_CartTest.java:56)] Quantity changed to 5
+[INFO] 13-08-2025 18:26:32 [main] [Tests.TC04_CartTest.changeItemQuantityInCart(TC04_CartTest.java:66)] Actual quantity value: 5
+[INFO] 13-08-2025 18:26:33 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: changeItemQuantityInCart
+[INFO] 13-08-2025 18:26:33 [main] [Listeners.ITestMethodListenerClass.onTestSuccess(ITestMethodListenerClass.java:15)] Test changeItemQuantityInCart passed successfully.
+[INFO] 13-08-2025 18:26:33 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: quitBrowser
+[INFO] 13-08-2025 18:26:33 [main] [Tests.TC04_CartTest.browserSetup(TC04_CartTest.java:31)] null
+[INFO] 13-08-2025 18:26:35 [main] [Tests.TC04_CartTest.browserSetup(TC04_CartTest.java:33)] Chrome is now opened
+[INFO] 13-08-2025 18:26:36 [main] [Tests.TC04_CartTest.browserSetup(TC04_CartTest.java:35)] Page is redirected to the URL
+[INFO] 13-08-2025 18:26:37 [main] [Utilities.Utilities.login(Utilities.java:102)] Browser setup completed and user logged in successfully.
+[INFO] 13-08-2025 18:26:37 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: browserSetup
+[INFO] 13-08-2025 18:26:38 [main] [Tests.TC04_CartTest.clearCartTC(TC04_CartTest.java:79)] Cart cleared successfully
+[INFO] 13-08-2025 18:26:39 [main] [Tests.TC04_CartTest.clearCartTC(TC04_CartTest.java:82)] Actual message: Your Shopping Cart is empty!
+[INFO] 13-08-2025 18:26:39 [main] [Tests.TC04_CartTest.clearCartTC(TC04_CartTest.java:85)] Cart is empty after clearing
+[INFO] 13-08-2025 18:26:39 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: clearCartTC
+[INFO] 13-08-2025 18:26:39 [main] [Listeners.ITestMethodListenerClass.onTestSuccess(ITestMethodListenerClass.java:15)] Test clearCartTC passed successfully.
+[INFO] 13-08-2025 18:26:39 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: quitBrowser
+[INFO] 13-08-2025 18:26:39 [main] [Tests.TC04_CartTest.browserSetup(TC04_CartTest.java:31)] null
+[INFO] 13-08-2025 18:26:40 [main] [Tests.TC04_CartTest.browserSetup(TC04_CartTest.java:33)] Chrome is now opened
+[INFO] 13-08-2025 18:26:42 [main] [Tests.TC04_CartTest.browserSetup(TC04_CartTest.java:35)] Page is redirected to the URL
+[INFO] 13-08-2025 18:26:43 [main] [Utilities.Utilities.login(Utilities.java:102)] Browser setup completed and user logged in successfully.
+[INFO] 13-08-2025 18:26:43 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: browserSetup
+[INFO] 13-08-2025 18:26:44 [main] [Utilities.Utilities.closePopUp(Utilities.java:80)] Pop-up closed successfully.
+[INFO] 13-08-2025 18:26:45 [main] [Tests.TC04_CartTest.checkProductPriceInCartEqualsToHomePageTC(TC04_CartTest.java:98)] Home page price: 1590.0
+[INFO] 13-08-2025 18:26:45 [main] [Tests.TC04_CartTest.checkProductPriceInCartEqualsToHomePageTC(TC04_CartTest.java:99)] Cart price: 1590.0
+[INFO] 13-08-2025 18:26:46 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: checkProductPriceInCartEqualsToHomePageTC
+[INFO] 13-08-2025 18:26:46 [main] [Listeners.ITestMethodListenerClass.onTestSuccess(ITestMethodListenerClass.java:15)] Test checkProductPriceInCartEqualsToHomePageTC passed successfully.
+[INFO] 13-08-2025 18:26:46 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: quitBrowser
+[INFO] 13-08-2025 18:26:46 [main] [Tests.TC04_CartTest.browserSetup(TC04_CartTest.java:31)] null
+[INFO] 13-08-2025 18:26:47 [main] [Tests.TC04_CartTest.browserSetup(TC04_CartTest.java:33)] Chrome is now opened
+[INFO] 13-08-2025 18:26:49 [main] [Tests.TC04_CartTest.browserSetup(TC04_CartTest.java:35)] Page is redirected to the URL
+[INFO] 13-08-2025 18:26:50 [main] [Utilities.Utilities.login(Utilities.java:102)] Browser setup completed and user logged in successfully.
+[INFO] 13-08-2025 18:26:50 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: browserSetup
+[INFO] 13-08-2025 18:26:51 [main] [Utilities.Utilities.closePopUp(Utilities.java:80)] Pop-up closed successfully.
+[INFO] 13-08-2025 18:26:52 [main] [Tests.TC04_CartTest.ContinueShoppingWithoutAcceptingTermsTC(TC04_CartTest.java:113)] Clicked on Checkout button without accepting terms
+[INFO] 13-08-2025 18:26:52 [main] [Tests.TC04_CartTest.ContinueShoppingWithoutAcceptingTermsTC(TC04_CartTest.java:116)] Terms of service checkbox is displayed
+[INFO] 13-08-2025 18:26:53 [main] [Utilities.Utilities.closePopUp(Utilities.java:80)] Pop-up closed successfully.
+[INFO] 13-08-2025 18:26:53 [main] [Tests.TC04_CartTest.ContinueShoppingWithoutAcceptingTermsTC(TC04_CartTest.java:118)] Closed the terms of service popup
+[INFO] 13-08-2025 18:26:53 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: ContinueShoppingWithoutAcceptingTermsTC
+[INFO] 13-08-2025 18:26:53 [main] [Listeners.ITestMethodListenerClass.onTestSuccess(ITestMethodListenerClass.java:15)] Test ContinueShoppingWithoutAcceptingTermsTC passed successfully.
+[INFO] 13-08-2025 18:26:53 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: quitBrowser
+[INFO] 13-08-2025 18:26:53 [main] [Tests.TC04_CartTest.browserSetup(TC04_CartTest.java:31)] null
+[INFO] 13-08-2025 18:26:55 [main] [Tests.TC04_CartTest.browserSetup(TC04_CartTest.java:33)] Chrome is now opened
+[INFO] 13-08-2025 18:26:56 [main] [Tests.TC04_CartTest.browserSetup(TC04_CartTest.java:35)] Page is redirected to the URL
+[INFO] 13-08-2025 18:26:57 [main] [Utilities.Utilities.login(Utilities.java:102)] Browser setup completed and user logged in successfully.
+[INFO] 13-08-2025 18:26:57 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: browserSetup
+[INFO] 13-08-2025 18:27:00 [main] [Tests.TC04_CartTest.checkContinueShoppingButton(TC04_CartTest.java:127)] Bracelet added to cart
+[INFO] 13-08-2025 18:27:02 [main] [Tests.TC04_CartTest.checkContinueShoppingButton(TC04_CartTest.java:133)] bracelet added to cart
+[INFO] 13-08-2025 18:27:02 [main] [Tests.TC04_CartTest.checkContinueShoppingButton(TC04_CartTest.java:134)] cart opened
+[INFO] 13-08-2025 18:27:02 [main] [Tests.TC04_CartTest.checkContinueShoppingButton(TC04_CartTest.java:135)] Necklace added to cart
+[INFO] 13-08-2025 18:27:02 [main] [Tests.TC04_CartTest.checkContinueShoppingButton(TC04_CartTest.java:137)] the number displayed on cart is: (1)
+[INFO] 13-08-2025 18:27:04 [main] [Tests.TC04_CartTest.checkContinueShoppingButton(TC04_CartTest.java:147)] deleted item 0 from cart
+[INFO] 13-08-2025 18:27:05 [main] [Tests.TC04_CartTest.checkContinueShoppingButton(TC04_CartTest.java:147)] deleted item 1 from cart
+[INFO] 13-08-2025 18:27:05 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: checkContinueShoppingButton
+[INFO] 13-08-2025 18:27:05 [main] [Listeners.ITestMethodListenerClass.onTestSuccess(ITestMethodListenerClass.java:15)] Test checkContinueShoppingButton passed successfully.
+[INFO] 13-08-2025 18:27:05 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: quitBrowser
+[INFO] 13-08-2025 18:27:05 [main] [Tests.TC04_CartTest.browserSetup(TC04_CartTest.java:31)] null
+[INFO] 13-08-2025 18:27:07 [main] [Tests.TC04_CartTest.browserSetup(TC04_CartTest.java:33)] Chrome is now opened
+[INFO] 13-08-2025 18:27:08 [main] [Tests.TC04_CartTest.browserSetup(TC04_CartTest.java:35)] Page is redirected to the URL
+[INFO] 13-08-2025 18:27:09 [main] [Utilities.Utilities.login(Utilities.java:102)] Browser setup completed and user logged in successfully.
+[INFO] 13-08-2025 18:27:09 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: browserSetup
+[INFO] 13-08-2025 18:27:10 [main] [Utilities.Utilities.closePopUp(Utilities.java:80)] Pop-up closed successfully.
+[INFO] 13-08-2025 18:27:13 [main] [Tests.TC04_CartTest.checkout(TC04_CartTest.java:159)] Clicked on Checkout button after accepting terms
+[INFO] 13-08-2025 18:27:13 [main] [Tests.TC04_CartTest.checkout(TC04_CartTest.java:162)] User is redirected to the checkout page
+[INFO] 13-08-2025 18:27:14 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: checkout
+[INFO] 13-08-2025 18:27:14 [main] [Listeners.ITestMethodListenerClass.onTestSuccess(ITestMethodListenerClass.java:15)] Test checkout passed successfully.
+[INFO] 13-08-2025 18:27:14 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: quitBrowser
+[INFO] 13-08-2025 18:27:14 [main] [Tests.TC05_BooksTest.browserSetup(TC05_BooksTest.java:41)] null
+[INFO] 13-08-2025 18:27:16 [main] [Tests.TC05_BooksTest.browserSetup(TC05_BooksTest.java:43)] Chrome is now opened
+[INFO] 13-08-2025 18:27:17 [main] [Tests.TC05_BooksTest.browserSetup(TC05_BooksTest.java:45)] Page is redirected to the URL
+[INFO] 13-08-2025 18:27:18 [main] [Utilities.Utilities.login(Utilities.java:102)] Browser setup completed and user logged in successfully.
+[INFO] 13-08-2025 18:27:18 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: browserSetup
+[INFO] 13-08-2025 18:27:19 [main] [Tests.TC05_BooksTest.addProductToCartTC(TC05_BooksTest.java:104)] Number on cart icon before adding items is: (0)
+[INFO] 13-08-2025 18:27:20 [main] [Tests.TC05_BooksTest.addProductToCartTC(TC05_BooksTest.java:107)] Notification text:   The product has been added to your shopping cart
+[INFO] 13-08-2025 18:27:20 [main] [Tests.TC05_BooksTest.addProductToCartTC(TC05_BooksTest.java:108)] Number on cart icon after adding items is: (1)
+[INFO] 13-08-2025 18:27:21 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: addProductToCartTC
+[INFO] 13-08-2025 18:27:21 [main] [Listeners.ITestMethodListenerClass.onTestSuccess(ITestMethodListenerClass.java:15)] Test addProductToCartTC passed successfully.
+[INFO] 13-08-2025 18:27:22 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: quitBrowser
+[INFO] 13-08-2025 18:27:22 [main] [Tests.TC05_BooksTest.browserSetup(TC05_BooksTest.java:41)] null
+[INFO] 13-08-2025 18:27:23 [main] [Tests.TC05_BooksTest.browserSetup(TC05_BooksTest.java:43)] Chrome is now opened
+[INFO] 13-08-2025 18:27:24 [main] [Tests.TC05_BooksTest.browserSetup(TC05_BooksTest.java:45)] Page is redirected to the URL
+[INFO] 13-08-2025 18:27:25 [main] [Utilities.Utilities.login(Utilities.java:102)] Browser setup completed and user logged in successfully.
+[INFO] 13-08-2025 18:27:25 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: browserSetup
+[INFO] 13-08-2025 18:27:27 [main] [Tests.TC05_BooksTest.checkPricesAfterSortingTC(TC05_BooksTest.java:65)] Actual Prices after sorting: [51.0, 24.0, 24.0, 10.0, 10.0, 10.0]
+[INFO] 13-08-2025 18:27:27 [main] [Tests.TC05_BooksTest.checkPricesAfterSortingTC(TC05_BooksTest.java:66)] Expected Prices after sorting: [51.0, 24.0, 24.0, 10.0, 10.0, 10.0]
+[INFO] 13-08-2025 18:27:27 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: checkPricesAfterSortingTC
+[INFO] 13-08-2025 18:27:27 [main] [Listeners.ITestMethodListenerClass.onTestSuccess(ITestMethodListenerClass.java:15)] Test checkPricesAfterSortingTC passed successfully.
+[INFO] 13-08-2025 18:27:28 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: quitBrowser
+[INFO] 13-08-2025 18:27:28 [main] [Tests.TC05_BooksTest.browserSetup(TC05_BooksTest.java:41)] null
+[INFO] 13-08-2025 18:27:29 [main] [Tests.TC05_BooksTest.browserSetup(TC05_BooksTest.java:43)] Chrome is now opened
+[INFO] 13-08-2025 18:27:31 [main] [Tests.TC05_BooksTest.browserSetup(TC05_BooksTest.java:45)] Page is redirected to the URL
+[INFO] 13-08-2025 18:27:32 [main] [Utilities.Utilities.login(Utilities.java:102)] Browser setup completed and user logged in successfully.
+[INFO] 13-08-2025 18:27:32 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: browserSetup
+[INFO] 13-08-2025 18:27:33 [main] [Tests.TC05_BooksTest.checkProductsCountAfterSortingTC(TC05_BooksTest.java:76)] Number of products displayed: 4
+[INFO] 13-08-2025 18:27:34 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: checkProductsCountAfterSortingTC
+[INFO] 13-08-2025 18:27:34 [main] [Listeners.ITestMethodListenerClass.onTestSuccess(ITestMethodListenerClass.java:15)] Test checkProductsCountAfterSortingTC passed successfully.
+[INFO] 13-08-2025 18:27:34 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: quitBrowser
+[INFO] 13-08-2025 18:27:34 [main] [Tests.TC05_BooksTest.browserSetup(TC05_BooksTest.java:41)] null
+[INFO] 13-08-2025 18:27:35 [main] [Tests.TC05_BooksTest.browserSetup(TC05_BooksTest.java:43)] Chrome is now opened
+[INFO] 13-08-2025 18:27:37 [main] [Tests.TC05_BooksTest.browserSetup(TC05_BooksTest.java:45)] Page is redirected to the URL
+[INFO] 13-08-2025 18:27:37 [main] [Utilities.Utilities.login(Utilities.java:102)] Browser setup completed and user logged in successfully.
+[INFO] 13-08-2025 18:27:37 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: browserSetup
+[INFO] 13-08-2025 18:27:39 [main] [Tests.TC05_BooksTest.viewAsFeatureTC(TC05_BooksTest.java:87)] Grid view is not visible: true
+[INFO] 13-08-2025 18:27:40 [main] [Tests.TC05_BooksTest.viewAsFeatureTC(TC05_BooksTest.java:95)] List view is not visible: true
+[INFO] 13-08-2025 18:27:40 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: viewAsFeatureTC
+[INFO] 13-08-2025 18:27:40 [main] [Listeners.ITestMethodListenerClass.onTestSuccess(ITestMethodListenerClass.java:15)] Test viewAsFeatureTC passed successfully.
+[INFO] 13-08-2025 18:27:41 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: quitBrowser
+[INFO] 13-08-2025 18:27:41 [main] [Tests.TC06_CheckoutTest.browserSetup(TC06_CheckoutTest.java:26)] null
+[INFO] 13-08-2025 18:27:42 [main] [Tests.TC06_CheckoutTest.browserSetup(TC06_CheckoutTest.java:28)] Chrome is now opened
+[INFO] 13-08-2025 18:27:44 [main] [Tests.TC06_CheckoutTest.browserSetup(TC06_CheckoutTest.java:30)] Page is redirected to the URL
+[INFO] 13-08-2025 18:27:45 [main] [Utilities.Utilities.login(Utilities.java:102)] Browser setup completed and user logged in successfully.
+[INFO] 13-08-2025 18:27:48 [main] [Tests.TC06_CheckoutTest.browserSetup(TC06_CheckoutTest.java:39)] Browser setup completed and user logged in successfully
+[INFO] 13-08-2025 18:27:48 [main] [Tests.TC06_CheckoutTest.browserSetup(TC06_CheckoutTest.java:40)] Navigated to Jewelry category and added Necklace to cart
+[INFO] 13-08-2025 18:27:48 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: browserSetup
+[INFO] 13-08-2025 18:27:51 [main] [Tests.TC06_CheckoutTest.fillingDataTest(TC06_CheckoutTest.java:47)] Filled in shipping address details
+[INFO] 13-08-2025 18:27:51 [main] [Tests.TC06_CheckoutTest.fillingDataTest(TC06_CheckoutTest.java:48)] Continuing to next step in checkout process
+[INFO] 13-08-2025 18:27:51 [main] [Tests.TC06_CheckoutTest.fillingDataTest(TC06_CheckoutTest.java:58)] Back button is displayed after checkout
+[INFO] 13-08-2025 18:27:53 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: fillingDataTest
+[INFO] 13-08-2025 18:27:53 [main] [Listeners.ITestMethodListenerClass.onTestSuccess(ITestMethodListenerClass.java:15)] Test fillingDataTest passed successfully.
+[INFO] 13-08-2025 18:27:53 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: quitBrowser
+[INFO] 13-08-2025 18:27:53 [main] [Tests.TC06_CheckoutTest.browserSetup(TC06_CheckoutTest.java:26)] null
+[INFO] 13-08-2025 18:27:54 [main] [Tests.TC06_CheckoutTest.browserSetup(TC06_CheckoutTest.java:28)] Chrome is now opened
+[INFO] 13-08-2025 18:27:55 [main] [Tests.TC06_CheckoutTest.browserSetup(TC06_CheckoutTest.java:30)] Page is redirected to the URL
+[INFO] 13-08-2025 18:27:56 [main] [Utilities.Utilities.login(Utilities.java:102)] Browser setup completed and user logged in successfully.
+[INFO] 13-08-2025 18:28:00 [main] [Tests.TC06_CheckoutTest.browserSetup(TC06_CheckoutTest.java:39)] Browser setup completed and user logged in successfully
+[INFO] 13-08-2025 18:28:00 [main] [Tests.TC06_CheckoutTest.browserSetup(TC06_CheckoutTest.java:40)] Navigated to Jewelry category and added Necklace to cart
+[INFO] 13-08-2025 18:28:00 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: browserSetup
+[INFO] 13-08-2025 18:28:00 [main] [Tests.TC06_CheckoutTest.clickContinueButtonWithoutFillingData(TC06_CheckoutTest.java:68)] Clicked continue button without filling data
+[INFO] 13-08-2025 18:28:01 [main] [Tests.TC06_CheckoutTest.clickContinueButtonWithoutFillingData(TC06_CheckoutTest.java:71)] Error message displayed: true
+[INFO] 13-08-2025 18:28:02 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: clickContinueButtonWithoutFillingData
+[INFO] 13-08-2025 18:28:02 [main] [Listeners.ITestMethodListenerClass.onTestSuccess(ITestMethodListenerClass.java:15)] Test clickContinueButtonWithoutFillingData passed successfully.
+[INFO] 13-08-2025 18:28:02 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: quitBrowser
+[INFO] 13-08-2025 18:28:02 [main] [Tests.TC06_CheckoutTest.browserSetup(TC06_CheckoutTest.java:26)] null
+[INFO] 13-08-2025 18:28:04 [main] [Tests.TC06_CheckoutTest.browserSetup(TC06_CheckoutTest.java:28)] Chrome is now opened
+[INFO] 13-08-2025 18:28:06 [main] [Tests.TC06_CheckoutTest.browserSetup(TC06_CheckoutTest.java:30)] Page is redirected to the URL
+[INFO] 13-08-2025 18:28:06 [main] [Utilities.Utilities.login(Utilities.java:102)] Browser setup completed and user logged in successfully.
+[INFO] 13-08-2025 18:28:10 [main] [Tests.TC06_CheckoutTest.browserSetup(TC06_CheckoutTest.java:39)] Browser setup completed and user logged in successfully
+[INFO] 13-08-2025 18:28:10 [main] [Tests.TC06_CheckoutTest.browserSetup(TC06_CheckoutTest.java:40)] Navigated to Jewelry category and added Necklace to cart
+[INFO] 13-08-2025 18:28:10 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: browserSetup
+[INFO] 13-08-2025 18:28:16 [main] [Tests.TC06_CheckoutTest.checkoutTest(TC06_CheckoutTest.java:88)] Filled in shipping address details
+[INFO] 13-08-2025 18:28:16 [main] [Tests.TC06_CheckoutTest.checkoutTest(TC06_CheckoutTest.java:89)] Completed all steps in checkout process
+[INFO] 13-08-2025 18:28:16 [main] [Tests.TC06_CheckoutTest.checkoutTest(TC06_CheckoutTest.java:90)] Order confirmation message should be displayed now
+[INFO] 13-08-2025 18:28:17 [main] [Tests.TC06_CheckoutTest.checkoutTest(TC06_CheckoutTest.java:95)] Checkout completed successfully, user is on the order confirmation page
+[INFO] 13-08-2025 18:28:18 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: checkoutTest
+[INFO] 13-08-2025 18:28:18 [main] [Listeners.ITestMethodListenerClass.onTestSuccess(ITestMethodListenerClass.java:15)] Test checkoutTest passed successfully.
+[INFO] 13-08-2025 18:28:19 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: quitBrowser
+[INFO] 13-08-2025 18:28:19 [main] [Tests.TC06_CheckoutTest.browserSetup(TC06_CheckoutTest.java:26)] null
+[INFO] 13-08-2025 18:28:20 [main] [Tests.TC06_CheckoutTest.browserSetup(TC06_CheckoutTest.java:28)] Chrome is now opened
+[INFO] 13-08-2025 18:28:22 [main] [Tests.TC06_CheckoutTest.browserSetup(TC06_CheckoutTest.java:30)] Page is redirected to the URL
+[INFO] 13-08-2025 18:28:23 [main] [Utilities.Utilities.login(Utilities.java:102)] Browser setup completed and user logged in successfully.
+[INFO] 13-08-2025 18:28:26 [main] [Tests.TC06_CheckoutTest.browserSetup(TC06_CheckoutTest.java:39)] Browser setup completed and user logged in successfully
+[INFO] 13-08-2025 18:28:26 [main] [Tests.TC06_CheckoutTest.browserSetup(TC06_CheckoutTest.java:40)] Navigated to Jewelry category and added Necklace to cart
+[INFO] 13-08-2025 18:28:26 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: browserSetup
+[INFO] 13-08-2025 18:28:27 [main] [Tests.TC06_CheckoutTest.checkBackButtonWhileCheckingOutTest(TC06_CheckoutTest.java:103)] Filled in shipping address details
+[INFO] 13-08-2025 18:28:27 [main] [Tests.TC06_CheckoutTest.checkBackButtonWhileCheckingOutTest(TC06_CheckoutTest.java:104)] Clicked back button while checking out
+[INFO] 13-08-2025 18:28:27 [main] [Tests.TC06_CheckoutTest.checkBackButtonWhileCheckingOutTest(TC06_CheckoutTest.java:106)] Continue button is displayed after clicking back: true
+[INFO] 13-08-2025 18:28:28 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: checkBackButtonWhileCheckingOutTest
+[INFO] 13-08-2025 18:28:28 [main] [Listeners.ITestMethodListenerClass.onTestSuccess(ITestMethodListenerClass.java:15)] Test checkBackButtonWhileCheckingOutTest passed successfully.
+[INFO] 13-08-2025 18:28:28 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: quitBrowser
+[INFO] 13-08-2025 18:28:29 [main] [Tests.TC06_CheckoutTest.browserSetup(TC06_CheckoutTest.java:26)] null
+[INFO] 13-08-2025 18:28:30 [main] [Tests.TC06_CheckoutTest.browserSetup(TC06_CheckoutTest.java:28)] Chrome is now opened
+[INFO] 13-08-2025 18:28:31 [main] [Tests.TC06_CheckoutTest.browserSetup(TC06_CheckoutTest.java:30)] Page is redirected to the URL
+[INFO] 13-08-2025 18:28:32 [main] [Utilities.Utilities.login(Utilities.java:102)] Browser setup completed and user logged in successfully.
+[INFO] 13-08-2025 18:28:35 [main] [Tests.TC06_CheckoutTest.browserSetup(TC06_CheckoutTest.java:39)] Browser setup completed and user logged in successfully
+[INFO] 13-08-2025 18:28:35 [main] [Tests.TC06_CheckoutTest.browserSetup(TC06_CheckoutTest.java:40)] Navigated to Jewelry category and added Necklace to cart
+[INFO] 13-08-2025 18:28:35 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: browserSetup
+[INFO] 13-08-2025 18:28:41 [main] [Tests.TC06_CheckoutTest.viewOrderDetailsTC(TC06_CheckoutTest.java:121)] Filled in shipping address details
+[INFO] 13-08-2025 18:28:41 [main] [Tests.TC06_CheckoutTest.viewOrderDetailsTC(TC06_CheckoutTest.java:122)] Clicked on order details link after completing checkout
+[INFO] 13-08-2025 18:28:41 [main] [Tests.TC06_CheckoutTest.viewOrderDetailsTC(TC06_CheckoutTest.java:125)] Order number retrieved: 2078601
+[INFO] 13-08-2025 18:28:41 [main] [Tests.TC06_CheckoutTest.viewOrderDetailsTC(TC06_CheckoutTest.java:129)] Order information title is displayed: true
+[INFO] 13-08-2025 18:28:41 [main] [Tests.TC06_CheckoutTest.viewOrderDetailsTC(TC06_CheckoutTest.java:135)] User is redirected to order details page successfully
+[INFO] 13-08-2025 18:28:41 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: viewOrderDetailsTC
+[INFO] 13-08-2025 18:28:42 [main] [Listeners.ITestMethodListenerClass.onTestSuccess(ITestMethodListenerClass.java:15)] Test viewOrderDetailsTC passed successfully.
+[INFO] 13-08-2025 18:28:43 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: quitBrowser
+[INFO] 13-08-2025 18:28:43 [main] [Tests.TC06_CheckoutTest.browserSetup(TC06_CheckoutTest.java:26)] null
+[INFO] 13-08-2025 18:28:45 [main] [Tests.TC06_CheckoutTest.browserSetup(TC06_CheckoutTest.java:28)] Chrome is now opened
+[INFO] 13-08-2025 18:28:47 [main] [Tests.TC06_CheckoutTest.browserSetup(TC06_CheckoutTest.java:30)] Page is redirected to the URL
+[INFO] 13-08-2025 18:28:48 [main] [Utilities.Utilities.login(Utilities.java:102)] Browser setup completed and user logged in successfully.
+[INFO] 13-08-2025 18:28:50 [main] [Tests.TC06_CheckoutTest.browserSetup(TC06_CheckoutTest.java:39)] Browser setup completed and user logged in successfully
+[INFO] 13-08-2025 18:28:50 [main] [Tests.TC06_CheckoutTest.browserSetup(TC06_CheckoutTest.java:40)] Navigated to Jewelry category and added Necklace to cart
+[INFO] 13-08-2025 18:28:50 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: browserSetup
+[INFO] 13-08-2025 18:28:58 [main] [Tests.TC06_CheckoutTest.hitReOrder(TC06_CheckoutTest.java:150)] Filled in shipping address details
+[INFO] 13-08-2025 18:28:58 [main] [Tests.TC06_CheckoutTest.hitReOrder(TC06_CheckoutTest.java:151)] Clicked on Re-order button after viewing order details
+[INFO] 13-08-2025 18:28:58 [main] [Tests.TC06_CheckoutTest.hitReOrder(TC06_CheckoutTest.java:154)] Re-order button clicked successfully, user is redirected to cart page
+[INFO] 13-08-2025 18:28:59 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: hitReOrder
+[INFO] 13-08-2025 18:28:59 [main] [Listeners.ITestMethodListenerClass.onTestSuccess(ITestMethodListenerClass.java:15)] Test hitReOrder passed successfully.
+[INFO] 13-08-2025 18:29:00 [main] [Listeners.IInvokedMethodListenerClass.afterInvocation(IInvokedMethodListenerClass.java:24)] After invocation of method: quitBrowser

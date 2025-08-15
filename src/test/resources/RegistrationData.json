@@ -1,0 +1,39 @@
+{ "RegisterData" :
+  {
+  "registrationWithValidDataTC" : {
+    "firstname" : "Ibrahim",
+    "lastname" : "Deif" ,
+    "password" : "1234567" ,
+    "confirmedPassword" : "1234567"
+  },
+
+  "invalidPasswordLength" : {
+    "firstname" : "Ahmed",
+    "lastname" : "Ali" ,
+    "password" : "1" ,
+    "confirmedPassword" : "1"
+  },
+
+  "confirmedPasswordDoesNotMatch" : {
+    "firstname" : "Hamza",
+    "lastname" : "Ahmed" ,
+    "password" : "1234567" ,
+    "confirmedPassword" : "1"
+  },
+
+  "leaveFirstNameFieldEmpty" : {
+    "firstname" : "",
+    "lastname" : "Ali" ,
+    "password" : "1234567" ,
+    "confirmedPassword" : "1234567"
+  },
+  "wrongFormattedEmail": {
+    "firstname" : "Ibrahim",
+    "lastname" : "Deif" ,
+    "password" : "1234567" ,
+    "confirmedPassword" : "1234567"
+  }
+
+  }
+
+}

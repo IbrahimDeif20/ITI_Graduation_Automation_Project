@@ -1,0 +1,2344 @@
+The following is a digest of the repository "Web_automation_graduation_Project".
+This digest is designed to be easily parsed by Large Language Models.
+
+--- SUMMARY ---
+Repository: Web_automation_graduation_Project
+Files Analyzed: 43
+Total Text Size: 84.21 KB
+Estimated Tokens (text only): ~18,934
+
+--- DIRECTORY STRUCTURE ---
+Web_automation_graduation_Project/
+├── .allure/
+│   └── allure-2.25.0/
+│       ├── config/
+│       │   ├── allure-cucumber.yml
+│       │   ├── allure-junit.yml
+│       │   └── allure.yml
+│       └── plugins/
+│           ├── behaviors-plugin/
+│           │   └── allure-plugin.yml
+│           ├── custom-logo-plugin/
+│           │   └── allure-plugin.yml
+│           ├── jira-plugin/
+│           │   └── allure-plugin.yml
+│           ├── junit-xml-plugin/
+│           │   └── allure-plugin.yml
+│           ├── packages-plugin/
+│           │   └── allure-plugin.yml
+│           ├── screen-diff-plugin/
+│           │   └── allure-plugin.yml
+│           ├── trx-plugin/
+│           │   └── allure-plugin.yml
+│           ├── xctest-plugin/
+│           │   └── allure-plugin.yml
+│           ├── xray-plugin/
+│           │   └── allure-plugin.yml
+│           ├── xunit-xml-plugin/
+│           │   └── allure-plugin.yml
+│           └── README.txt
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   ├── DriverFactory/
+│   │   │   │   └── DriverFactory.java
+│   │   │   ├── Pages/
+│   │   │   │   ├── P01_RegistrationPage.java
+│   │   │   │   ├── P02_LoginPage.java
+│   │   │   │   ├── P03_HomePage.java
+│   │   │   │   ├── P04_CartPage.java
+│   │   │   │   ├── P05_BooksPage.java
+│   │   │   │   └── P06_CheckoutPage.java
+│   │   │   └── Utilities/
+│   │   │       ├── DataUtil.java
+│   │   │       ├── LogUtils.java
+│   │   │       └── Utilities.java
+│   │   └── resources/
+│   │       ├── allure.properties
+│   │       └── log4j2.properties
+│   ├── test/
+│   │   ├── java/
+│   │   │   ├── Listeners/
+│   │   │   │   ├── IInvoked.java
+│   │   │   │   └── ITest.java
+│   │   │   └── Tests/
+│   │   │       ├── TC01_RegistrationTest.java
+│   │   │       ├── TC02_LoginTest.java
+│   │   │       ├── TC03_HomePageTest.java
+│   │   │       ├── TC04_CartTest.java
+│   │   │       ├── TC05_BooksTest.java
+│   │   │       └── TC06_CheckoutTest.java
+│   │   ├── resources/
+│   │   │   ├── CustomerData.json
+│   │   │   ├── environments.properties
+│   │   │   ├── LoginData.json
+│   │   │   └── RegistrationData.json
+│   │   └── Test-outputs/
+│   │       └── target/
+│   │           └── allure-results/
+│   │               └── environment.properties
+│   └── Test Runner/
+│       ├── Login.xml
+│       └── Test-Runner.xml
+├── package.json
+└── pom.xml
+
+
+--- FILE CONTENTS ---
+============================================================
+FILE: .allure/allure-2.25.0/config/allure-junit.yml
+============================================================
+plugins:
+  - junit-plugin
+  - packages-plugin
+
+
+============================================================
+FILE: .allure/allure-2.25.0/config/allure.yml
+============================================================
+plugins:
+  - junit-xml-plugin
+  - xunit-xml-plugin
+  - trx-plugin
+  - behaviors-plugin
+  - packages-plugin
+  - screen-diff-plugin
+  - xctest-plugin
+  - jira-plugin
+  - xray-plugin
+
+
+============================================================
+FILE: .allure/allure-2.25.0/plugins/behaviors-plugin/allure-plugin.yml
+============================================================
+id: behaviors
+name: Behaviors aggregator
+description: The aggregator adds behaviors tab to the report
+extensions:
+  - io.qameta.allure.behaviors.BehaviorsPlugin
+jsFiles:
+  - index.js
+
+============================================================
+FILE: .allure/allure-2.25.0/plugins/custom-logo-plugin/allure-plugin.yml
+============================================================
+id: custom-logo
+name: Custom logo aggregator
+description: The aggregator replaces default Allure logo with a custom one
+cssFiles:
+  - styles.css
+
+============================================================
+FILE: .allure/allure-2.25.0/plugins/jira-plugin/allure-plugin.yml
+============================================================
+id: jira
+name: Jira Plugin
+description: The plugin that adds support for Jira integration.
+extensions:
+  - io.qameta.allure.jira.JiraExportPlugin
+
+
+============================================================
+FILE: .allure/allure-2.25.0/plugins/junit-xml-plugin/allure-plugin.yml
+============================================================
+id: junit
+name: JUnit Plugin
+description: The plugin that adds support for results in JUnit.xml data format.
+extensions:
+  - io.qameta.allure.junitxml.JunitXmlPlugin
+
+============================================================
+FILE: .allure/allure-2.25.0/plugins/packages-plugin/allure-plugin.yml
+============================================================
+id: packages
+name: Packages aggregator
+description: The aggregator adds packages tab to the report
+extensions:
+  - io.qameta.allure.packages.PackagesPlugin
+jsFiles:
+  - index.js
+
+============================================================
+FILE: .allure/allure-2.25.0/plugins/screen-diff-plugin/allure-plugin.yml
+============================================================
+id: screen-diff
+name: Screen diff
+description: Who cares about description by just-boris
+jsFiles:
+  - index.js
+cssFiles:
+  - styles.css
+
+============================================================
+FILE: .allure/allure-2.25.0/plugins/trx-plugin/allure-plugin.yml
+============================================================
+id: trx
+name: XUnit TRX Plugin
+description: The plugin that adds support for results TRX data format.
+extensions:
+  - io.qameta.allure.trx.TrxPlugin
+
+============================================================
+FILE: .allure/allure-2.25.0/plugins/xctest-plugin/allure-plugin.yml
+============================================================
+id: xctest
+name: XCTest Plugin
+description: The plugin that adds support for results XCTest data format.
+extensions:
+  - io.qameta.allure.xctest.XcTestPlugin
+
+============================================================
+FILE: .allure/allure-2.25.0/plugins/xray-plugin/allure-plugin.yml
+============================================================
+id: xray
+name: Xray Plugin
+description: The plugin that adds support for Xray integration.
+extensions:
+  - io.qameta.allure.xray.XrayTestRunExportPlugin
+
+
+============================================================
+FILE: .allure/allure-2.25.0/plugins/xunit-xml-plugin/allure-plugin.yml
+============================================================
+id: xunit-xml
+name: XUnit XML v2 Plugin
+description: The plugin that adds support for results in Xunit.net xml data format.
+extensions:
+  - io.qameta.allure.xunitxml.XunitXmlPlugin
+
+============================================================
+FILE: .allure/allure-2.25.0/plugins/README.txt
+============================================================
+The directory with Allure plugins. To add the plugin simply unpack it to this folder.
+
+============================================================
+FILE: src/main/java/DriverFactory/DriverFactory.java
+============================================================
+package DriverFactory;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class DriverFactory {
+
+    private static final ThreadLocal<WebDriver> driverThreadLocal = new ThreadLocal<>();
+
+    public static void setUpBrowser(String browser) {
+
+        switch (browser.toLowerCase()) {
+            case "edge":
+                EdgeOptions edgeOptions = new EdgeOptions();
+                edgeOptions.addArguments("--start-maximized");
+                edgeOptions.addArguments("--incognito");
+                driverThreadLocal.set(new EdgeDriver(edgeOptions));
+                break;
+            case "firefox":
+                driverThreadLocal.set(new FirefoxDriver());
+                break;
+            default:
+                ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.addArguments("--start-maximized");
+                chromeOptions.addArguments("--incognito");
+                chromeOptions.addArguments("--disable-autofill-keyboard-accessory-view[8]");
+                driverThreadLocal.set(new ChromeDriver(chromeOptions));
+        }
+    }
+
+
+    public static WebDriver getDriver() {
+        return driverThreadLocal.get();
+    }
+
+    public static void quitDriver() {
+        getDriver().quit();
+        driverThreadLocal.remove();
+    }
+}
+
+
+============================================================
+FILE: src/main/java/Pages/P01_RegistrationPage.java
+============================================================
+package Pages;
+
+import Utilities.Utilities;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class P01_RegistrationPage {
+
+    WebDriver driver;
+
+    private final By maleLocator = By.id("gender-male");
+    private final By femaleLocator = By.id("gender-female");
+    private final By firstNameLocator = By.id("FirstName");
+    private final By lastNameLocator = By.id("LastName");
+    private final By emailLocator = By.id("Email");
+    private final By passwordLocator = By.id("Password");
+    private final By confirmPasswordLocator = By.id("ConfirmPassword");
+    private final By registerButtonLocator = By.id("register-button");
+    public static By passwordErrorMsgLocator = By.cssSelector("span.field-validation-error");
+    public static By passwordDoesNotMatchErrorMsgLocator = By.cssSelector(".field-validation-error");
+    public static By firstNameAsBlankErrorMsgLocator = By.className("field-validation-error");
+    public static By emailMsgLocator = By.className("field-validation-error");
+
+
+
+    public P01_RegistrationPage(WebDriver driver) {
+        this.driver = driver;
+    }
+
+    public P01_RegistrationPage chooseGender(String gender){
+        if(gender.equals("m"))
+             Utilities.clickOnElement(driver, maleLocator);
+        else
+             Utilities.clickOnElement(driver, femaleLocator);
+        return this;
+    }
+
+    public P01_RegistrationPage enterFirstName(String firstName){
+        Utilities.enterText(driver, firstNameLocator, firstName);
+        return this;
+    }
+
+    public P01_RegistrationPage enterLastName(String lastName){
+        Utilities.enterText(driver, lastNameLocator, lastName);
+        return this;
+    }
+
+    public P01_RegistrationPage enterEmail(String email){
+        Utilities.enterText(driver, emailLocator, email);
+        return this;
+    }
+
+    public P01_RegistrationPage enterPassword(String password){
+        Utilities.enterText(driver, passwordLocator, password);
+        return this;
+    }
+
+    public P01_RegistrationPage enterConfirmPassword(String password){
+        Utilities.enterText(driver, confirmPasswordLocator, password);
+        return this;
+    }
+
+    public void clickRegisterButton(){
+        Utilities.clickOnElement(driver, registerButtonLocator);
+    }
+}
+
+
+============================================================
+FILE: src/main/java/Pages/P02_LoginPage.java
+============================================================
+package Pages;
+
+import Utilities.Utilities;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class P02_LoginPage {
+
+    WebDriver driver;
+
+    private final By emailLocator = By.id("Email");
+    private final By passwordLocator = By.id("Password");
+    private final By clickLoginButtonLocator = By.xpath("//input[@value='Log in']");
+
+
+
+    public P02_LoginPage(WebDriver driver) {
+        this.driver = driver;
+    }
+
+    public P02_LoginPage enterEmail(String email) {
+        Utilities.enterText(driver, emailLocator, email);
+        return this;
+    }
+
+    public P02_LoginPage enterPassword(String password) {
+        Utilities.enterText(driver, passwordLocator, password);
+        return this;
+    }
+
+    public void clickLogin() {
+        Utilities.clickOnElement(driver, clickLoginButtonLocator);
+    }
+}
+
+
+============================================================
+FILE: src/main/java/Pages/P03_HomePage.java
+============================================================
+package Pages;
+
+import Utilities.Utilities;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import Utilities.LogUtils;
+
+import java.util.List;
+
+public class P03_HomePage {
+    WebDriver driver;
+
+   private final By booksCategoryLocator = By.xpath("(//a[@href='/books'])[1]");
+   private final By computersCategoryLocator = By.xpath("(//a[@href='/computers'])[1]");
+   private final By electronicsCategoryLocator = By.xpath("(//a[@href='/electronics'])[1]");
+   private final By apparelCategoryLocator = By.xpath("(//a[@href='/apparel-shoes'])[1]");
+   private final By digitalCategoryLocator = By.xpath("(//a[@href='/digital-downloads'])[1]");
+   private final By jewelryCategoryLocator = By.xpath("(//a[@href='/jewelry'])[1]");
+   private final By giftCardCategoryLocator = By.xpath("(//a[@href='/gift-cards'])[1]");
+   private final By searchBoxLocator = By.name("q");
+   private final By searchButtonLocator = By.xpath("//input[@value='Search']");
+   private final By logoutButtonLocator = By.className("ico-logout");
+   private final By viewAccountDetailsLocator = By.xpath("(//a[@href='/customer/info'])[1]");
+   private final By laptopAddToCartLocator = By.xpath("(//input[@value='Add to cart'])[2]");
+   private final By laptopPriceLocator = By.xpath("(//span[contains(@class,'actual-price')])[2]");
+   public static By footerLocator = By.className("footer-menu-wrapper");
+   private final By facebookIconLocator = By.linkText("Facebook");
+   private final By twitterIconLocator = By.linkText("Twitter");
+   private final By numberOfDisplayedProductsLocator = By.cssSelector("input[value='Add to cart']");
+   public static By cartLocator = By.xpath("(//span[@class='cart-label'])[1]");
+   private final By notificationPopUpLocator = By.xpath("//span[@title='Close']");
+
+
+    public P03_HomePage(WebDriver driver) {
+        this.driver = driver;
+    }
+
+    public P04_CartPage selectCategory(String category) {
+        switch (category) {
+            case "books" :
+                driver.findElement(booksCategoryLocator).click();
+                break;
+            case "computers" :
+                driver.findElement(computersCategoryLocator).click();
+                break;
+            case "electronics" :
+                driver.findElement(electronicsCategoryLocator).click();
+                break;
+            case "apparel-shoes" :
+                driver.findElement(apparelCategoryLocator).click();
+                break;
+            case "digital-downloads" :
+                driver.findElement(digitalCategoryLocator).click();
+                break;
+            case "jewelry" :
+                driver.findElement(jewelryCategoryLocator).click();
+                break;
+            case "gift-cards" :
+                driver.findElement(giftCardCategoryLocator).click();
+                break;
+        }
+        return new P04_CartPage(driver);
+    }
+
+    public void logout(){
+        Utilities.clickOnElement(driver, logoutButtonLocator);
+    }
+
+    public void checkSearchBar(String text) {
+        Utilities.enterText(driver, searchBoxLocator, text);
+        Utilities.clickOnElement(driver, searchButtonLocator);
+    }
+
+    public void clickViewAccountDetails() {
+        Utilities.clickOnElement(driver, viewAccountDetailsLocator);
+    }
+
+    public void clickAddToCartForLaptop() {
+        Utilities.clickOnElement(driver, laptopAddToCartLocator);
+    }
+
+    public P04_CartPage openCartPage() {
+        Utilities.clickOnElement(driver, cartLocator);
+        return new P04_CartPage(driver);
+    }
+
+    public P03_HomePage removeNotificationPopUp() {
+        Utilities.clickOnElement(driver, notificationPopUpLocator);
+        return this;
+    }
+
+    public int validateNumberOfDisplayedProducts(){
+        List<WebElement> items = driver.findElements(numberOfDisplayedProductsLocator);
+        return items.size();
+    }
+
+    public int validateFooterSize(){
+        WebElement footer = driver.findElement(footerLocator);
+        List<WebElement> footerLinks = footer.findElements(By.tagName("a")); //22
+        return footerLinks.size();
+    }
+
+    public void checkFaceBookRedirection(){
+        String originalWindow = driver.getWindowHandle();
+        Utilities.clickOnElement(driver, facebookIconLocator);
+        LogUtils.info("The current tab URL is: " + driver.getCurrentUrl());
+        for (String windowHandle : driver.getWindowHandles()) {
+            if (!windowHandle.equals(originalWindow)) {
+                driver.switchTo().window(windowHandle);
+                break;
+            }
+        }
+        LogUtils.info("The new tab URL is: " + driver.getCurrentUrl());
+    }
+
+    public void checkTwitterRedirection(){
+        String originalWindow = driver.getWindowHandle();
+        Utilities.clickOnElement(driver, twitterIconLocator);
+        LogUtils.info("The current tab URL is: " + driver.getCurrentUrl());
+        for (String windowHandle : driver.getWindowHandles()) {
+            if (!windowHandle.equals(originalWindow)) {
+                driver.switchTo().window(windowHandle);
+                break;
+            }
+        }
+        LogUtils.info("The new tab URL is: " + driver.getCurrentUrl());
+    }
+
+    public double retrieveLaptopPrice() {
+        return Double.parseDouble(Utilities.getElementText(driver, laptopPriceLocator));
+    }
+
+}
+
+
+============================================================
+FILE: src/main/java/Pages/P04_CartPage.java
+============================================================
+package Pages;
+
+import Utilities.Utilities;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+
+public class P04_CartPage {
+    WebDriver driver;
+
+    public static By emptyCartMessage = By.className("order-summary-content");
+    public static By laptopInCartLocator = By.xpath("(//a[@href='/141-inch-laptop'])[3]");
+    public static By productBox = By.xpath(("(//input[@type='checkbox'])[1]"));
+    public static By productQuantityLocator = By.xpath("(//input[@type='text'])[2]");
+    public static By productPriceLocator = By.xpath("(//span[contains(@class,'product-price')])[4]");
+    private final By checkoutButtonLocator = By.id("checkout");
+    public static By termsOfServiceCheckboxLocator = By.className("ui-dialog-title");
+    private final By continueShoppingButtonLocator = By.xpath("//input[@name='continueshopping']");
+    private final By acceptTermsCheckBox = By.xpath("(//input[@type='checkbox'])[2]");
+    private final By cartLocator = By.xpath("(//span[@class='cart-label'])[1]");
+    private final By addBraceletToCartButton = By.xpath("(//input[@value='Add to cart'])[1]");
+    private final By braceletLocator = By.id("add-to-cart-button-71");
+    private final By addNecklaceToCartButton = By.xpath("(//input[@value='Add to cart'])[2]");
+    private final By addBraceletLength = By.name("product_attribute_71_10_16");
+    public static By closePopUpLocator = By.xpath("//span[contains(@class,'ui-button-icon-primary')]");
+    public static By closeNotificationPopUpLocator = By.xpath("//span[@title='Close']");
+
+
+    public P04_CartPage(WebDriver driver) {
+        this.driver = driver;
+    }
+
+    public void changeProductQuantity(String quantity) {
+        WebElement quantityBox = Utilities.byToWebElement(driver, productQuantityLocator);
+
+        Utilities.generalWait(driver)
+                .until(ExpectedConditions.elementToBeClickable(quantityBox));
+
+        quantityBox.click();
+        quantityBox.clear();
+        quantityBox.sendKeys(Keys.CONTROL + "a", Keys.DELETE);
+
+        quantityBox.sendKeys(quantity);
+        quantityBox.sendKeys(Keys.ENTER);
+
+    }
+
+    public void clearCart() {
+        WebElement quantityBox = Utilities.byToWebElement(driver, productBox);
+        quantityBox.click();
+        quantityBox.sendKeys(Keys.ENTER);
+    }
+
+    public double getProductPrice() {
+        String price = Utilities.getElementText(driver, productPriceLocator);
+        return Double.parseDouble(price);
+    }
+
+    public P04_CartPage clickOnAcceptTermsCheckBox() {
+        Utilities.clickOnElement(driver, acceptTermsCheckBox);
+        return this;
+    }
+
+    public void clickCheckoutButtonWithoutAcceptingTerms() {
+        Utilities.clickOnElement(driver, checkoutButtonLocator);
+    }
+
+    public P04_CartPage openCartPage() {
+        Utilities.clickOnElement(driver, cartLocator);
+        return new P04_CartPage(driver);
+    }
+
+    public P04_CartPage clickContinueShoppingButton(){
+        Utilities.clickOnElement(driver, continueShoppingButtonLocator);
+        return this;
+    }
+
+    public P04_CartPage addNecklaceToCart(){
+        Utilities.clickOnElement(driver, addNecklaceToCartButton);
+        return this;
+    }
+
+    public P04_CartPage addBraceletToCart(){
+        Utilities.clickOnElement(driver, addBraceletToCartButton);
+        return this;
+    }
+
+    public void addBracelet(){
+        Utilities.enterText(driver, addBraceletLength, "10");
+        Utilities.clickOnElement(driver, braceletLocator);
+    }
+
+    public void clickCheckoutButton() {
+        Utilities.clickOnElement(driver, checkoutButtonLocator);
+    }
+
+}
+
+
+============================================================
+FILE: src/main/java/Pages/P05_BooksPage.java
+============================================================
+package Pages;
+
+import Utilities.Utilities;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class P05_BooksPage {
+    WebDriver driver;
+
+    private final By displayDropDown = By.id("products-pagesize");
+    private final By sortByDropDown = By.id("products-orderby");
+    private final By viewAsDropDown = By.id("products-viewmode");
+    private final By addToCartButton = By.xpath("//input[@value = 'Add to cart']");
+    private final By textOnCartIcon = By.xpath("//span[@class= 'cart-qty']");
+
+    public P05_BooksPage(WebDriver driver) {
+        this.driver = driver;
+    }
+
+    public void selectDisplayPerPage(String value) {
+        Utilities.selectingFromDropDown(driver,displayDropDown, value);
+    }
+
+    public void selectSortBy(String value) {
+        Utilities.selectingFromDropDown(driver,sortByDropDown,value);
+    }
+
+    public void selectViewAs(String value) {
+        Utilities.selectingFromDropDown(driver,viewAsDropDown,value);
+    }
+
+    public P05_BooksPage clickAddToCartButton(){
+        Utilities.clickOnElement(driver,addToCartButton);
+        return this;
+    }
+
+    public String getNumberOnCartIcon(){
+        return Utilities.getElementText(driver, textOnCartIcon);
+    }
+
+
+
+
+
+
+}
+
+
+============================================================
+FILE: src/main/java/Pages/P06_CheckoutPage.java
+============================================================
+package Pages;
+
+import Utilities.Utilities;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class P06_CheckoutPage {
+    WebDriver driver;
+
+    private final By companyLocator = By.id("BillingNewAddress_Company");
+    private final By cityLocator = By.id("BillingNewAddress_City");
+    private final By address1Locator = By.id("BillingNewAddress_Address1");
+    private final By address2Locator = By.id("BillingNewAddress_Address2");
+    private final By postalCodeLocator = By.id("BillingNewAddress_ZipPostalCode");
+    private final By phoneNumberLocator = By.id("BillingNewAddress_PhoneNumber");
+    private final By faxNumberLocator = By.id("BillingNewAddress_FaxNumber");
+    private final By countryLocator = By.xpath("//select[@id='BillingNewAddress_CountryId']");
+    private final By addressSelectDropdown = By.cssSelector("select[id='billing-address-select']");
+    public static By continueButton = By.xpath("(//input[@title='Continue'])[1]");
+    public static By storePickup = By.id("PickUpInStore");
+    public static By errorMsgLocator = By.className("field-validation-error");
+    private final By continueButtonLocator2 = By.xpath("(//input[@title='Continue'])[2]");
+    private final By continueButtonLocator3 = By.xpath("(//input[@value='Continue'])[3]");
+    private final By continueButtonLocator4 = By.xpath("(//input[@value='Continue'])[4]");
+    private final By continueButtonLocator5 = By.xpath("(//input[@value='Continue'])[5]");
+    private final By continueButtonLocator6 = By.xpath("//input[@value='Confirm']");
+    public static By orderConfirmedMsgLocator = By.xpath("//input[@value='Continue']");
+    private final By nextDayAirLocator = By.id("shippingoption_1");
+    private final By backButtonLocator = By.xpath("(//p[@class='back-link'])[1] //a");
+    private final By orderDetailsLocator = By.linkText("Click here for order details.");
+    private final By orderNumberLocator = By.className("order-number");
+    public static By orderInformationTitle = By.tagName("h1");
+    private final By reOrderButtonLocator = By.xpath("//input[@value='Re-order']");
+
+    public P06_CheckoutPage(WebDriver driver) {
+        this.driver = driver;
+    }
+
+    public P06_CheckoutPage selectCountry(String countryName) {
+        Utilities.selectingFromDropDown(driver,countryLocator, countryName);
+        return this;
+    }
+
+    public P06_CheckoutPage enterCompany(String companyName) {
+        Utilities.enterText(driver, companyLocator, companyName);
+        return this;
+    }
+
+    public P06_CheckoutPage enterCity(String cityName) {
+        Utilities.enterText(driver, cityLocator, cityName);
+        return this;
+    }
+
+    public P06_CheckoutPage enterAddress1(String address1Text) {
+        Utilities.enterText(driver, address1Locator, address1Text);
+        return this;
+    }
+
+    public P06_CheckoutPage enterAddress2(String address2Text) {
+        Utilities.enterText(driver, address2Locator, address2Text);
+        return this;
+    }
+
+    public P06_CheckoutPage enterZipCode(String postalCodeText) {
+        Utilities.enterText(driver, postalCodeLocator, postalCodeText);
+        return this;
+    }
+
+    public P06_CheckoutPage enterPhoneNumber(String phoneNumberText) {
+        Utilities.enterText(driver, phoneNumberLocator, phoneNumberText);
+        return this;
+    }
+
+    public P06_CheckoutPage enterFaxNumber(String faxNumberText) {
+        Utilities.enterText(driver, faxNumberLocator, faxNumberText);
+        return this;
+    }
+
+    public P06_CheckoutPage selectNewAddressOption() {
+        Utilities.selectingFromDropDown(driver, addressSelectDropdown, "New Address");
+        return this;
+    }
+
+    public void clickContinueButton() {
+        Utilities.clickOnElement(driver, continueButton);
+    }
+
+    public P06_CheckoutPage clickContinueButton2() {
+        Utilities.clickOnElement(driver, continueButtonLocator2);
+        return this;
+    }
+
+    public P06_CheckoutPage clickContinueButton3() {
+        Utilities.clickOnElement(driver, continueButtonLocator3);
+        return this;
+    }
+    public P06_CheckoutPage clickContinueButton4() {
+        Utilities.clickOnElement(driver, continueButtonLocator4);
+        return this;
+    }
+    public P06_CheckoutPage clickContinueButton5() {
+        Utilities.clickOnElement(driver, continueButtonLocator5);
+        return this;
+    }
+
+    public P06_CheckoutPage clickContinueButton6() {
+        Utilities.clickOnElement(driver, continueButtonLocator6);
+        return this;
+    }
+
+    public P06_CheckoutPage selectNextDayAir() {
+        Utilities.clickOnElement(driver, nextDayAirLocator);
+        return this;
+    }
+
+    public void clickBackButton(){
+        Utilities.clickOnElement(driver, backButtonLocator);
+    }
+    public P06_CheckoutPage clickOrderDetailsLink() {
+        Utilities.clickOnElement(driver, orderDetailsLocator);
+        return this;
+    }
+
+    public String getOrderNumber() {
+        String text = Utilities.getElementText(driver, orderNumberLocator);
+        return text.replaceAll("Order #", "");
+    }
+
+    public void clickReOrderButton() {
+        Utilities.clickOnElement(driver, reOrderButtonLocator);
+    }
+
+}
+
+
+============================================================
+FILE: src/main/java/Utilities/DataUtil.java
+============================================================
+package Utilities;
+
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+import org.testng.annotations.DataProvider;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.lang.reflect.Method;
+import java.util.Properties;
+
+public class DataUtil {
+    static String FilePath = "src/test/resources/RegistrationData.json";
+    static String File_Path = "src/test/resources/";
+
+    @DataProvider(name = "RegisterDataProvider")
+    public static Object[][] readFromJsonFile(Method method) throws FileNotFoundException {
+        FileReader reader = new FileReader(FilePath);
+        JsonObject jsonObject = JsonParser.parseReader(reader).getAsJsonObject();
+        JsonObject registerData = jsonObject.getAsJsonObject("RegisterData");
+        String testCaseName = method.getName();
+        JsonObject record = registerData.getAsJsonObject(testCaseName);
+
+        return new Object[][] {
+                {record.get("firstname").getAsString(),record.get("lastname").getAsString()
+                        ,record.get("password").getAsString(),record.get("confirmedPassword").getAsString()}
+        };
+    }
+
+    public static String getJsonData(String FileName, String field) throws FileNotFoundException {
+
+        FileReader reader = new FileReader(File_Path + FileName + ".json");
+        JsonElement jsonElement = JsonParser.parseReader(reader);
+        return jsonElement.getAsJsonObject().get(field).getAsString();
+    }
+
+    public static String getPropertyValue(String FileName, String key) throws IOException {
+        Properties properties = new Properties();
+        properties.load(new FileInputStream(File_Path + FileName + ".properties"));
+        return properties.getProperty(key);
+    }
+}
+
+
+============================================================
+FILE: src/main/java/Utilities/LogUtils.java
+============================================================
+package Utilities;
+
+import org.apache.logging.log4j.LogManager;
+
+public class LogUtils {
+
+    public final static String Log_Path = "src/test/Test-outputs/Logs";
+
+    public static void trace(String msg) {
+        LogManager.getLogger(Thread.currentThread().getStackTrace()[2].toString()).trace(msg);
+    }
+
+    public static void debug(String msg) {
+        LogManager.getLogger(Thread.currentThread().getStackTrace()[2].toString()).debug(msg);
+    }
+
+    public static void info(String msg) {
+        LogManager.getLogger(Thread.currentThread().getStackTrace()[2].toString()).info(msg);
+    }
+
+    public static void error(String msg) {
+        LogManager.getLogger(Thread.currentThread().getStackTrace()[2].toString()).error(msg);
+    }
+
+    public static void warn(String msg) {
+        LogManager.getLogger(Thread.currentThread().getStackTrace()[2].toString()).warn(msg);
+    }
+
+    public static void fatal(String msg) {
+        LogManager.getLogger(Thread.currentThread().getStackTrace()[2].toString()).fatal(msg);
+    }
+}
+
+
+============================================================
+FILE: src/main/java/Utilities/Utilities.java
+============================================================
+package Utilities;
+
+import Pages.P02_LoginPage;
+import Pages.P04_CartPage;
+import Pages.P06_CheckoutPage;
+import io.qameta.allure.Allure;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.time.Duration;
+import java.util.Arrays;
+import java.util.Comparator;
+
+import static DriverFactory.DriverFactory.getDriver;
+
+
+public class Utilities {
+
+    private static final String screenshotPath = "src/test/Test-outputs/ScreenShots/";
+
+    public static void clickOnElement(WebDriver driver, By locator) {
+        new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.elementToBeClickable(locator));
+        driver.findElement(locator).click();
+    }
+
+    public static void enterText(WebDriver driver, By locator, String text) {
+        new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOfElementLocated(locator));
+        driver.findElement(locator).sendKeys(text);
+    }
+
+    public static String getElementText(WebDriver driver, By locator) {
+        new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOfElementLocated(locator));
+        return driver.findElement(locator).getText();
+    }
+
+    public static String getTimeStamp() {
+        return new java.text.SimpleDateFormat("yyyy-MM-dd-HH-mm-ss").format(new java.util.Date());
+    }
+
+    public static void takeScreenshot(WebDriver driver, String ScreenshotName) throws IOException {
+
+        try {
+        File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        File ScreenshotDest = new File(screenshotPath + ScreenshotName + "-" + getTimeStamp() + ".png");
+        FileUtils.copyFile(srcFile, ScreenshotDest);
+        Allure.addAttachment(ScreenshotName, Files.newInputStream(ScreenshotDest.toPath()));
+            }
+        catch (Exception e) {
+        LogUtils.error(e.getMessage());
+        }
+    }
+
+    public static void scrollToElement(WebDriver driver, By locator) {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", driver.findElement(locator));
+    }
+
+    public static WebDriverWait generalWait(WebDriver driver) {
+        return new WebDriverWait(driver, Duration.ofSeconds(5));
+    }
+
+    public static WebElement byToWebElement(WebDriver driver, By locator) {
+        return driver.findElement(locator);
+    }
+
+    public static void selectingFromDropDown(WebDriver driver, By locator, String option) {
+        new Select(byToWebElement(driver, locator)).selectByVisibleText(option);
+    }
+
+    public static void closePopUp(WebDriver driver, By locator) {
+        new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.elementToBeClickable(locator));
+        driver.findElement(locator).click();
+        LogUtils.info("Pop-up closed successfully.");
+    }
+
+    public static File getLastFile(String folderPath) {
+        File folder = new File(folderPath);
+        File[] files = folder.listFiles();
+        assert files != null;
+        if (files.length == 0)
+            return null;
+        Arrays.sort(files, Comparator.comparingLong(File::lastModified).reversed());
+        return files[0];
+    }
+
+    public static void clearCart(WebDriver driver) throws IOException {
+        getDriver().get(DataUtil.getPropertyValue("environments", "Cart_page"));
+        new P04_CartPage(getDriver()).clearCart();
+    }
+
+    public static void login(WebDriver driver) throws FileNotFoundException {
+        new P02_LoginPage(getDriver())
+                .enterEmail(DataUtil.getJsonData("LoginData","email"))
+                .enterPassword(DataUtil.getJsonData("LoginData","password")).clickLogin();
+        LogUtils.info("Browser setup completed and user logged in successfully.");
+    }
+
+    public static P06_CheckoutPage fillingDataWithSelectNewAddress(WebDriver driver) throws FileNotFoundException {
+        new Pages.P06_CheckoutPage(getDriver())
+                .selectNewAddressOption()
+                .enterCompany(DataUtil.getJsonData("CustomerData", "company"))
+                .selectCountry(DataUtil.getJsonData("CustomerData", "country"))
+                .enterCity(DataUtil.getJsonData("CustomerData", "city"))
+                .enterAddress1(DataUtil.getJsonData("CustomerData", "address1"))
+                .enterAddress2(DataUtil.getJsonData("CustomerData", "address2"))
+                .enterZipCode(DataUtil.getJsonData("CustomerData", "zipCode"))
+                .enterPhoneNumber(DataUtil.getJsonData("CustomerData", "phoneNumber"))
+                .enterFaxNumber(DataUtil.getJsonData("CustomerData", "faxNumber"))
+                .clickContinueButton();
+        return new P06_CheckoutPage(driver);
+    }
+
+    public static void fillingDataWithoutSelectNewAddress(WebDriver driver) throws FileNotFoundException {
+        new Pages.P06_CheckoutPage(getDriver())
+                .enterCompany(DataUtil.getJsonData("CustomerData", "company"))
+                .selectCountry(DataUtil.getJsonData("CustomerData", "country"))
+                .enterCity(DataUtil.getJsonData("CustomerData", "city"))
+                .enterAddress1(DataUtil.getJsonData("CustomerData", "address1"))
+                .enterAddress2(DataUtil.getJsonData("CustomerData", "address2"))
+                .enterZipCode(DataUtil.getJsonData("CustomerData", "zipCode"))
+                .enterPhoneNumber(DataUtil.getJsonData("CustomerData", "phoneNumber"))
+                .enterFaxNumber(DataUtil.getJsonData("CustomerData", "faxNumber"))
+                .clickContinueButton();
+    }
+
+}
+
+
+============================================================
+FILE: src/main/resources/allure.properties
+============================================================
+allure.results.directory=test-output/target/allure-results
+
+============================================================
+FILE: src/main/resources/log4j2.properties
+============================================================
+#Log files location
+property.basePath=src/test/Test-outputs/Logs
+appender=file, stdout
+#Definethe file appender
+appender.file.type=File
+appender.file.name=fileAppender
+appender.file.fileName=${basePath}/log_${date: yyyy-MM-dd_hh-mm-ss a}.log
+appender.file.layout.type=PatternLayout
+appender.file.layout.pattern=[%level] %d{dd-MM-yyyy HH:mm:ss} [%t] [%c] %msg%n
+#Define the stdout appender
+appender.stdout.type=Console
+appender.stdout.name=consoleAppender
+appender.stdout.layout.type=PatternLayout
+appender.stdout.layout.pattern=[%level] %d{dd-MM-yyyy HH:mm:ss} [%t] [%c] %msg%n
+# Configure root logger
+rootLogger.level=TRACE
+rootLogger.appenderRef.file.ref=fileAppender
+rootLogger.appenderRef.stdout.ref=consoleAppender
+
+============================================================
+FILE: src/test/java/Listeners/IInvoked.java
+============================================================
+package Listeners;
+
+import Utilities.LogUtils;
+import Utilities.Utilities;
+import io.qameta.allure.Allure;
+import org.testng.IInvokedMethod;
+import org.testng.IInvokedMethodListener;
+import org.testng.ITestResult;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
+import static DriverFactory.DriverFactory.getDriver;
+
+public class IInvoked implements IInvokedMethodListener {
+
+    public void beforeInvocation(IInvokedMethod method, ITestResult testResult) {
+        //LogUtils.info("Before invocation of method: " + method.getTestMethod().getMethodName());
+    }
+
+    public void afterInvocation(IInvokedMethod method, ITestResult testResult) {
+        LogUtils.info("After invocation of method: " + method.getTestMethod().getMethodName());
+        File logFile = Utilities.getLastFile(LogUtils.Log_Path);
+        try {
+            Allure.addAttachment("logs.log", Files.readString(Path.of(logFile.getPath())));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        if (testResult.getStatus() == ITestResult.FAILURE) {
+            LogUtils.info("TC" + testResult.getName() + " has been failed");
+            try {
+                Utilities.takeScreenshot(getDriver(), testResult.getName());
+
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
+
+
+}
+
+
+============================================================
+FILE: src/test/java/Listeners/ITest.java
+============================================================
+package Listeners;
+
+import Utilities.LogUtils;
+import Utilities.Utilities;
+import org.openqa.selenium.WebDriver;
+import org.testng.ITestContext;
+import org.testng.ITestListener;
+import org.testng.ITestResult;
+import java.io.IOException;
+
+public class ITest implements ITestListener {
+    WebDriver driver;
+
+    public void onTestSuccess(ITestResult result) {
+        LogUtils.info("Test " + result.getName() + " passed successfully.");
+    }
+
+    public void onTestFailure(ITestResult result) {
+        LogUtils.error("Test " + result.getName() + " failed with exception: " + result.getThrowable());
+        try {
+            Utilities.takeScreenshot(driver, result.getName());
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void onTestSkipped(ITestResult result) {
+        LogUtils.warn("Test " + result.getName() + " was skipped.");
+    }
+
+
+    public void onStart(ITestContext context) {
+        //LogUtils.info("Starting test suite: " + context.getName());
+    }
+
+    public void onFinish(ITestContext context) {
+        //LogUtils.info("Finished test suite: " + context.getName());
+    }
+
+
+}
+
+
+============================================================
+FILE: src/test/java/Tests/TC01_RegistrationTest.java
+============================================================
+package Tests;
+
+import Pages.P01_RegistrationPage;
+import Utilities.DataUtil;
+import Utilities.LogUtils;
+import Utilities.Utilities;
+import com.github.javafaker.Faker;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+import Listeners.IInvokedMethodListenerClass;
+import Listeners.ITestMethodListenerClass;
+import java.io.IOException;
+import java.time.Duration;
+
+import static DriverFactory.DriverFactory.*;
+
+@Listeners({IInvoked.class, ITest.class})
+public class TC01_RegistrationTest {
+
+    private static String email = new Faker().internet().emailAddress();
+    By continueButtonLocator = By.xpath("//input[@value='Continue']");
+
+    @BeforeMethod
+    public void browserSetup() throws IOException {
+
+        String browser = System.getProperty("Browser") != null ? System.getProperty("Browser") : DataUtil.getPropertyValue("environments", "Browser");
+        LogUtils.info(System.getProperty("Browser"));
+        setUpBrowser(browser);
+        LogUtils.info("Chrome is now opened");
+        getDriver().get(DataUtil.getPropertyValue("environments", "Register_page"));
+        LogUtils.info("Page is redirected to the URL");
+        getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+    }
+
+    @Test(dataProvider = "RegisterDataProvider", dataProviderClass = DataUtil.class)
+    public void registrationWithValidDataTC(String firstName,String lastName,String password,String confirmedPassword) throws IOException {
+        new P01_RegistrationPage(getDriver())
+                .chooseGender("m")
+                .enterFirstName(firstName)
+                .enterLastName(lastName)
+                .enterEmail(email)
+                .enterPassword(password)
+                .enterConfirmPassword(confirmedPassword)
+                .clickRegisterButton();
+        LogUtils.info("Registration form filled with valid data");
+
+        Utilities.generalWait(getDriver())
+                .until(ExpectedConditions.visibilityOfElementLocated(continueButtonLocator));
+        Utilities.takeScreenshot(getDriver(), "RegistrationSuccess");
+        Assert.assertEquals(getDriver().getCurrentUrl(),DataUtil.getPropertyValue("environments", "Register_confirmation_page"));
+        LogUtils.info("Registration successful, redirected to confirmation page");
+    }
+
+    @Test (dataProvider = "RegisterDataProvider", dataProviderClass = DataUtil.class)
+    public void invalidPasswordLength(String firstName,String lastName,String password,String confirmedPassword) throws IOException {
+        new P01_RegistrationPage(getDriver()).chooseGender("m")
+                .enterFirstName(firstName)
+                .enterLastName(lastName)
+                .enterEmail(email)
+                .enterPassword(password)
+                .enterConfirmPassword(confirmedPassword)
+                .clickRegisterButton();
+        LogUtils.info("Registration form filled with invalid password length");
+
+        String errorMessage = getDriver().findElement(P01_RegistrationPage.passwordErrorMsgLocator).getText();
+        LogUtils.info("Error message displayed: " + errorMessage);
+        Utilities.takeScreenshot(getDriver(), "InvalidPasswordLengthError");
+        Assert.assertEquals(errorMessage,"The password should have at least 6 characters.");
+        Assert.assertNotEquals(getDriver().getCurrentUrl()
+                ,DataUtil.getPropertyValue("environments", "Register_confirmation_page"));
+        LogUtils.info("User not redirected to confirmation page due to invalid password length");
+    }
+
+    @Test (dataProvider = "RegisterDataProvider", dataProviderClass = DataUtil.class)
+    public void confirmedPasswordDoesNotMatch(String firstName,String lastName,String password,String confirmedPassword) throws IOException {
+        new P01_RegistrationPage(getDriver()).chooseGender("m")
+                .enterFirstName(firstName)
+                .enterLastName(lastName)
+                .enterEmail(email)
+                .enterPassword(password)
+                .enterConfirmPassword(confirmedPassword)
+                .clickRegisterButton();
+        LogUtils.info("Registration form filled with mismatched passwords");
+        Utilities.takeScreenshot(getDriver(), "PasswordMismatchError");
+        String errorMessage = getDriver().findElement(P01_RegistrationPage.passwordDoesNotMatchErrorMsgLocator).getText();
+        Assert.assertEquals(errorMessage,"The password and confirmation password do not match.");
+        Assert.assertNotEquals(getDriver().getCurrentUrl()
+                ,DataUtil.getPropertyValue("environments", "Register_confirmation_page"));
+        LogUtils.info("Error message displayed: " + errorMessage);
+    }
+
+    @Test (dataProvider = "RegisterDataProvider", dataProviderClass = DataUtil.class)
+    public void leaveFirstNameFieldEmpty(String firstName,String lastName,String password,String confirmedPassword) throws IOException {
+        new P01_RegistrationPage(getDriver()).chooseGender("f")
+                .enterFirstName(firstName)
+                .enterLastName(lastName)
+                .enterEmail(email)
+                .enterPassword(password)
+                .enterConfirmPassword(confirmedPassword)
+                .clickRegisterButton();
+        LogUtils.info("Registration form submitted with empty first name field");
+
+        String errorMessage = getDriver().findElement(P01_RegistrationPage.firstNameAsBlankErrorMsgLocator).getText();
+        Utilities.takeScreenshot(getDriver(), "EmptyFirstNameError");
+        Assert.assertEquals(errorMessage,"First name is required.");
+        Assert.assertNotEquals(getDriver().getCurrentUrl()
+                ,DataUtil.getPropertyValue("environments", "Register_confirmation_page"));
+        LogUtils.info("Error message displayed: " + errorMessage);
+    }
+
+    @Test (dataProvider = "RegisterDataProvider", dataProviderClass = DataUtil.class)
+    public void wrongFormattedEmail(String firstName,String lastName,String password,String confirmedPassword) throws IOException {
+        new P01_RegistrationPage(getDriver()).chooseGender("m")
+                .enterFirstName(firstName)
+                .enterLastName(lastName)
+                .enterEmail("user@@yahoo.com")
+                .enterPassword(password)
+                .enterConfirmPassword(confirmedPassword)
+                .clickRegisterButton();
+        LogUtils.info("Registration form filled with wrong formatted email");
+
+        String errorMessage = getDriver().findElement(P01_RegistrationPage.emailMsgLocator).getText();
+        Utilities.takeScreenshot(getDriver(), "WrongEmailFormatError");
+        Assert.assertEquals(errorMessage,"Wrong email");
+        Assert.assertNotEquals(getDriver().getCurrentUrl()
+                ,DataUtil.getPropertyValue("environments", "Register_confirmation_page"));
+        LogUtils.info("Error message displayed: " + errorMessage);
+    }
+
+    @AfterMethod
+    public void quitBrowser() {
+        quitDriver();
+        LogUtils.info("Browser closed successfully.");
+    }
+
+}
+
+
+============================================================
+FILE: src/test/java/Tests/TC02_LoginTest.java
+============================================================
+package Tests;
+
+import Pages.P02_LoginPage;
+import Utilities.DataUtil;
+import Utilities.LogUtils;
+import Utilities.Utilities;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+import java.io.IOException;
+import java.time.Duration;
+import Listeners.IInvokedMethodListenerClass;
+import Listeners.ITestMethodListenerClass;
+
+import static DriverFactory.DriverFactory.*;
+
+@Listeners({IInvoked.class, ITest.class})
+public class TC02_LoginTest {
+
+    @BeforeMethod
+    public void browserSetup() throws IOException {
+        String browser = System.getProperty("Browser") != null ? System.getProperty("Browser") : DataUtil.getPropertyValue("environments", "Browser");
+        LogUtils.info(System.getProperty("Browser"));
+        setUpBrowser(browser);
+        LogUtils.info("Chrome is now opened");
+        getDriver().get(DataUtil.getPropertyValue("environments", "Login_page"));
+        LogUtils.info("Page is redirected to the URL");
+        getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+    }
+
+    @Test
+    public void loginWithValidCredentials() throws IOException {
+        new P02_LoginPage(getDriver())
+                .enterEmail(DataUtil.getJsonData("LoginData","email"))
+                .enterPassword(DataUtil.getJsonData("LoginData","password")).clickLogin();
+        LogUtils.info("Email entered successfully");
+        LogUtils.info("Password entered successfully");
+        Assert.assertEquals(getDriver().getCurrentUrl(),DataUtil.getPropertyValue("environments", "Home_page"));
+        LogUtils.info("Login successful, redirected to home page");
+        Utilities.takeScreenshot(getDriver(), "LoginSuccess");
+    }
+
+    @Test
+    public void loginWithInvalidEmail() throws IOException {
+        new P02_LoginPage(getDriver())
+                .enterEmail(DataUtil.getJsonData("LoginData", "invalidEmail"))
+                .enterPassword(DataUtil.getJsonData("LoginData", "password"))
+                .clickLogin();
+        LogUtils.info("Invalid email entered");
+        LogUtils.info("Password entered successfully");
+        Assert.assertNotEquals(getDriver().getCurrentUrl(),DataUtil.getPropertyValue("environments", "Home_page"));
+        LogUtils.info("Login failed with invalid email, user not redirected to home page");
+        Utilities.takeScreenshot(getDriver(), "LoginFailureInvalidEmail");
+    }
+
+    @Test
+    public void loginWithInvalidPassword() throws IOException {
+        new P02_LoginPage(getDriver())
+                .enterEmail(DataUtil.getJsonData("LoginData", "email"))
+                .enterPassword(DataUtil.getJsonData("LoginData", "invalidPassword"))
+                .clickLogin();
+        LogUtils.info("Email entered successfully");
+        LogUtils.info("Invalid password entered");
+        Assert.assertNotEquals(getDriver().getCurrentUrl(),DataUtil.getPropertyValue("environments", "Home_page"));
+        LogUtils.info("Login failed with invalid password, user not redirected to home page");
+        Utilities.takeScreenshot(getDriver(), "LoginFailureInvalidPassword");
+    }
+
+    @AfterMethod
+    public void quitBrowser() {
+        quitDriver();
+    }
+
+}
+
+
+============================================================
+FILE: src/test/java/Tests/TC03_HomePageTest.java
+============================================================
+package Tests;
+
+import Pages.P03_HomePage;
+import Utilities.DataUtil;
+import Utilities.Utilities;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+import java.io.IOException;
+import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
+import Listeners.IInvokedMethodListenerClass;
+import Listeners.ITestMethodListenerClass;
+import Utilities.LogUtils;
+
+import static DriverFactory.DriverFactory.*;
+
+@Listeners({IInvoked.class, ITest.class})
+public class TC03_HomePageTest {
+
+    WebDriver driver;
+
+    By laptopLocator = By.xpath("//div[@class='product-item']//img[@title='Show details for 14.1-inch Laptop']");
+    By numberOnCartLocator = By.cssSelector("span[class = 'cart-qty']");
+    private final By productsBox = By.className("item-box");
+    private final By searchKeyWord = By.tagName("h1");
+
+    @BeforeMethod
+    public void browserSetup() throws IOException {
+        String browser = System.getProperty("Browser") != null ? System.getProperty("Browser") : DataUtil.getPropertyValue("environments", "Browser");
+        LogUtils.info(System.getProperty("Browser"));
+        setUpBrowser(browser);
+        LogUtils.info("Chrome is now opened");
+        getDriver().get(DataUtil.getPropertyValue("environments", "Login_page"));
+        LogUtils.info("Page is redirected to the URL");
+        getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        Utilities.login(getDriver());
+    }
+
+    @Test
+    public void navigateToAccountDetails() throws IOException {
+        new P03_HomePage(getDriver()).clickViewAccountDetails();
+        Assert.assertEquals(getDriver().getCurrentUrl()
+                ,DataUtil.getPropertyValue("environments", "Customer_info_page"));
+        LogUtils.info("Navigated to account details page successfully.");
+        Utilities.takeScreenshot(getDriver(), "AccountDetailsPage");
+    }
+
+    @Test
+    public void checkLogoutButton() throws IOException {
+        new P03_HomePage(getDriver()).logout();
+        Assert.assertEquals(getDriver().getCurrentUrl()
+                ,DataUtil.getPropertyValue("environments", "Home_page"));
+        LogUtils.info("Logout successful, redirected to home page.");
+        Utilities.takeScreenshot(getDriver(), "LogoutSuccess");
+    }
+
+    @Test
+    public void chooseCategoryTC() throws IOException {
+        new P03_HomePage(getDriver()).selectCategory("books");
+        Assert.assertEquals(getDriver().getCurrentUrl()
+                ,DataUtil.getPropertyValue("environments", "Home_page")+ "books");
+        LogUtils.info("Selected category 'books' and verified URL.");
+        Utilities.takeScreenshot(getDriver(), "BooksCategoryPage");
+    }
+
+    @Test
+    public void checkSearchBar() throws IOException {
+        new P03_HomePage(getDriver()).checkSearchBar("laptop");
+        WebElement item = Utilities.generalWait(getDriver()).until(ExpectedConditions.visibilityOfElementLocated(laptopLocator));
+        LogUtils.info("Laptop item is displayed in search results");
+        Assert.assertTrue(item.isDisplayed(), "Laptop item is not displayed in search results");
+        Utilities.takeScreenshot(getDriver(), "LaptopSearchResults");
+    }
+
+    @Test
+    public void searchUsingPartOfExistingTextTC() throws IOException {
+        int counter=0;
+        new P03_HomePage(getDriver()).checkSearchBar("blu");
+        Utilities.generalWait(getDriver()).until(ExpectedConditions.visibilityOfElementLocated(searchKeyWord));
+
+        List<WebElement> displayedProducts = getDriver().findElements(productsBox);
+        List<String> extractedText = new ArrayList<>();
+        for (WebElement element : displayedProducts) {
+            String extractedTextFromCurrentProduct = element.getText();
+            LogUtils.info("Extracted text from product: " + extractedTextFromCurrentProduct);
+            extractedText.add(extractedTextFromCurrentProduct);
+        }
+
+        for (String text : extractedText) {
+            if(text.toLowerCase().contains("blu".toLowerCase()))
+                counter = counter + 1;
+        }
+        LogUtils.info("Number of products displayed: " + displayedProducts.size());
+        LogUtils.info("Number of products that contain 'blu' in their name: " + counter);
+        Assert.assertEquals(displayedProducts.size(),counter);
+        Utilities.takeScreenshot(getDriver(), "SearchResultsForPartOfText");
+    }
+
+    @Test
+    public void addToCartFromHomePage() throws IOException {
+        String oldNumberDisplayedOnCart = Utilities.getElementText(getDriver(), numberOnCartLocator);
+        LogUtils.info("the number displayed on cart before adding laptop is: " + oldNumberDisplayedOnCart);
+        new P03_HomePage(getDriver()).clickAddToCartForLaptop();
+        Utilities.generalWait(getDriver()).until(ExpectedConditions.not(ExpectedConditions.textToBe(numberOnCartLocator,oldNumberDisplayedOnCart)));
+        LogUtils.info("the number displayed on cart after adding laptop is: " + Utilities.getElementText(getDriver(), numberOnCartLocator));
+        Assert.assertEquals(Utilities.getElementText(getDriver(), numberOnCartLocator),"(1)");
+        LogUtils.info("Laptop added to cart successfully.");
+        Utilities.takeScreenshot(getDriver(), "LaptopAddedToCart");
+        new P03_HomePage(getDriver()).removeNotificationPopUp().openCartPage().clearCart();
+    }
+
+    @Test()
+    public void checkNumbersOfDisplayedItems() throws IOException {
+        new P03_HomePage(getDriver()).validateNumberOfDisplayedProducts();
+        int expectedNumberOfItems = 6;
+        LogUtils.info("Expected number of items is " + expectedNumberOfItems + " and the actual is " +
+                      new P03_HomePage(getDriver()).validateNumberOfDisplayedProducts());
+        Assert.assertEquals(new P03_HomePage(getDriver()).validateNumberOfDisplayedProducts(), expectedNumberOfItems);
+        Utilities.takeScreenshot(getDriver(), "NumberOfDisplayedItems");
+    }
+
+    @Test
+    public void checkFooterSize() throws IOException {
+        Utilities.scrollToElement(getDriver(),P03_HomePage.footerLocator);
+        new P03_HomePage(getDriver()).validateFooterSize();
+        LogUtils.info("Expected footer size is 22 and the actual is " + new P03_HomePage(getDriver()).validateFooterSize());
+        Assert.assertEquals(new P03_HomePage(getDriver()).validateFooterSize(),22);
+        Utilities.takeScreenshot(getDriver(), "FooterSize");
+    }
+
+    @Test
+    public void checkRedirectionToFceBook() throws IOException {
+        new P03_HomePage(getDriver()).checkFaceBookRedirection();
+        Assert.assertEquals(getDriver().getCurrentUrl(), "https://www.facebook.com/nopCommerce");
+        LogUtils.info("Redirection to Facebook successful.");
+        Utilities.takeScreenshot(getDriver(), "FacebookRedirection");
+    }
+
+    @Test
+    public void checkRedirectionToTwitter() throws IOException {
+        new P03_HomePage(getDriver()).checkTwitterRedirection();
+        Assert.assertEquals(getDriver().getCurrentUrl(), "https://x.com/nopCommerce");
+        LogUtils.info("Redirection to Twitter successful.");
+        Utilities.takeScreenshot(getDriver(), "TwitterRedirection");
+    }
+
+    @AfterMethod
+    public void quitBrowser() {
+        quitDriver();
+    }
+
+}
+
+
+============================================================
+FILE: src/test/java/Tests/TC04_CartTest.java
+============================================================
+package Tests;
+
+import Pages.P03_HomePage;
+import Pages.P04_CartPage;
+import Utilities.DataUtil;
+import Utilities.Utilities;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+import Utilities.LogUtils;
+import java.io.IOException;
+import java.time.Duration;
+import Listeners.IInvokedMethodListenerClass;
+import Listeners.ITestMethodListenerClass;
+
+import static DriverFactory.DriverFactory.*;
+
+@Listeners({IInvoked.class, ITest.class})
+public class TC04_CartTest {
+
+    By numberOnCartLocator = By.cssSelector("span[class = 'cart-qty']");
+
+    @BeforeMethod
+    public void browserSetup() throws IOException {
+        String browser = System.getProperty("Browser") != null ? System.getProperty("Browser") : DataUtil.getPropertyValue("environments", "Browser");
+        LogUtils.info(System.getProperty("Browser"));
+        setUpBrowser(browser);
+        LogUtils.info("Chrome is now opened");
+        getDriver().get(DataUtil.getPropertyValue("environments", "Login_page"));
+        LogUtils.info("Page is redirected to the URL");
+        getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        Utilities.login(getDriver());
+    }
+
+    @Test(priority = 1)
+    public void checkLaptopExistsInCartAfterAdding() throws IOException {
+        new Pages.P03_HomePage(getDriver()).clickAddToCartForLaptop();
+        Utilities.clickOnElement(getDriver(), P04_CartPage.closeNotificationPopUpLocator);
+        Utilities.generalWait(getDriver()).until(ExpectedConditions.elementToBeClickable(P03_HomePage.cartLocator));
+        new Pages.P03_HomePage(getDriver()).openCartPage();
+        WebElement item = Utilities.generalWait(getDriver())
+                .until(ExpectedConditions.visibilityOfElementLocated(P04_CartPage.laptopInCartLocator));
+        LogUtils.info("Laptop item is displayed in cart");
+        Utilities.takeScreenshot(getDriver(), "LaptopItemInCart");
+        Assert.assertTrue(item.isDisplayed(), "Laptop item is not displayed in cart");
+    }
+
+    @Test(priority = 2)
+    public void changeItemQuantityInCart() throws IOException {
+        new Pages.P03_HomePage(getDriver()).openCartPage().changeProductQuantity("5");
+        LogUtils.info("Quantity changed to 5");
+        Utilities.generalWait(getDriver())
+                .until(ExpectedConditions.visibilityOfElementLocated(P04_CartPage.productQuantityLocator));
+
+        Utilities.generalWait(getDriver()).until(driver ->
+                Utilities.byToWebElement(driver, P04_CartPage.productQuantityLocator)
+                        .getAttribute("value").equals("5"));
+
+        String actualValue = Utilities.byToWebElement(getDriver(),
+                P04_CartPage.productQuantityLocator).getAttribute("value");
+        LogUtils.info("Actual quantity value: " + actualValue);
+        Assert.assertEquals(actualValue, "5", "Quantity is not updated correctly");
+        Utilities.takeScreenshot(getDriver(), "QuantityChangedTo5");
+    }
+
+    @Test(priority = 3)
+    public void clearCartTC() throws IOException {
+        new Pages.P03_HomePage(getDriver()).openCartPage();
+
+        if (Utilities.getElementText(getDriver(), P04_CartPage.emptyCartMessage).equals("Your Shopping Cart is empty!")) {
+                LogUtils.info("Cart is already empty, no need to clear it again");
+        } else {
+            new P04_CartPage(getDriver()).clearCart();
+            LogUtils.info("Cart cleared successfully");
+            Utilities.generalWait(getDriver()).until(ExpectedConditions.visibilityOfElementLocated(P04_CartPage.emptyCartMessage));
+            String actualMessage = Utilities.getElementText(getDriver(), P04_CartPage.emptyCartMessage);
+            LogUtils.info("Actual message: " + actualMessage);
+            Assert.assertEquals(actualMessage, "Your Shopping Cart is empty!"
+                    , "Cart is not empty after clearing");
+            LogUtils.info("Cart is empty after clearing");
+            Utilities.takeScreenshot(getDriver(), "CartCleared");
+        }
+    }
+
+    @Test(priority = 4)
+    public void checkProductPriceInCartEqualsToHomePageTC() throws IOException {
+        double homePagePrice = new Pages.P03_HomePage(getDriver()).retrieveLaptopPrice();
+        new Pages.P03_HomePage(getDriver()).clickAddToCartForLaptop();
+        Utilities.closePopUp(getDriver(), P04_CartPage.closeNotificationPopUpLocator);
+        Utilities.generalWait(getDriver()).until(ExpectedConditions.elementToBeClickable(P03_HomePage.cartLocator));
+        new Pages.P03_HomePage(getDriver()).openCartPage();
+        double cartPrice = new Pages.P04_CartPage(getDriver()).getProductPrice();
+        LogUtils.info("Home page price: " + homePagePrice);
+        LogUtils.info("Cart price: " + cartPrice);
+        Utilities.takeScreenshot(getDriver(), "ProductPriceInCart");
+        Assert.assertEquals(homePagePrice, cartPrice, "Product price in cart does not match home page price");
+        new P04_CartPage(getDriver()).clearCart(); // Clear cart after checking price
+    }
+
+    @Test(priority = 5)
+    public void ContinueShoppingWithoutAcceptingTermsTC() throws IOException {
+        new P03_HomePage(getDriver()).clickAddToCartForLaptop();
+        Utilities.closePopUp(getDriver(), P04_CartPage.closeNotificationPopUpLocator);
+        Utilities.generalWait(getDriver()).until(ExpectedConditions.elementToBeClickable(P03_HomePage.cartLocator));
+        new P03_HomePage(getDriver())
+                .openCartPage()
+                .clickCheckoutButtonWithoutAcceptingTerms();
+        LogUtils.info("Clicked on Checkout button without accepting terms");
+        Assert.assertEquals(Utilities.getElementText(getDriver(), P04_CartPage.termsOfServiceCheckboxLocator),
+                "Terms of service", "Terms of service checkbox is not displayed");
+        LogUtils.info("Terms of service checkbox is displayed");
+        Utilities.closePopUp(getDriver(), P04_CartPage.closePopUpLocator);
+        LogUtils.info("Closed the terms of service popup");
+        Utilities.takeScreenshot(getDriver(), "TermsOfServiceAccepted");
+        new P04_CartPage(getDriver()).clearCart();
+    }
+
+    @Test(priority = 6)
+    public void checkContinueShoppingButton() throws IOException {
+        new P03_HomePage(getDriver()).selectCategory("jewelry").addBraceletToCart()
+                .addBracelet();
+        LogUtils.info("Bracelet added to cart");
+        Utilities.clickOnElement(getDriver(),P04_CartPage.closeNotificationPopUpLocator);
+        Utilities.generalWait(getDriver()).until(ExpectedConditions.elementToBeClickable(P03_HomePage.cartLocator));
+        new P03_HomePage(getDriver())
+                .openCartPage().clickContinueShoppingButton()
+                 .addNecklaceToCart();
+        LogUtils.info("bracelet added to cart");
+        LogUtils.info("cart opened");
+        LogUtils.info("Necklace added to cart");
+        String NumberDisplayedOnCart = Utilities.getElementText(getDriver(), numberOnCartLocator);
+        LogUtils.info("the number displayed on cart is: " + NumberDisplayedOnCart);
+        Utilities.generalWait(getDriver())
+                .until(ExpectedConditions.textToBe(numberOnCartLocator, "(2)"));
+        Utilities.takeScreenshot(getDriver(), "ContinueShoppingButtonClicked");
+        Assert.assertEquals(Utilities.getElementText(getDriver(), numberOnCartLocator), "(2)");
+
+        for(int i = 0; i < 2; i++) {
+            new P04_CartPage(getDriver()).openCartPage();
+            Utilities.generalWait(getDriver()).until(ExpectedConditions.elementToBeClickable(P04_CartPage.productBox));
+            new P04_CartPage(getDriver()).clearCart(); // Clear cart after checking continue shopping
+            LogUtils.info("deleted item " + i + " from cart");
+        }
+    }
+    @Test(priority = 7)
+    public void checkout() throws IOException {
+        new P03_HomePage(getDriver()).clickAddToCartForLaptop();
+        Utilities.closePopUp(getDriver(), P04_CartPage.closeNotificationPopUpLocator);
+        Utilities.generalWait(getDriver()).until(ExpectedConditions.elementToBeClickable(P03_HomePage.cartLocator));
+        new P03_HomePage(getDriver())
+                .openCartPage()
+                .clickOnAcceptTermsCheckBox()
+                .clickCheckoutButton();
+        LogUtils.info("Clicked on Checkout button after accepting terms");
+        Utilities.takeScreenshot(getDriver(), "CheckoutButtonClicked");
+        Assert.assertEquals(getDriver().getCurrentUrl(), DataUtil.getPropertyValue("environments", "checkout_page"));
+        LogUtils.info("User is redirected to the checkout page");
+        Utilities.clearCart(getDriver());
+    }
+
+    @AfterMethod
+    public void quitBrowser() {
+        quitDriver();
+    }
+}
+
+
+============================================================
+FILE: src/test/java/Tests/TC05_BooksTest.java
+============================================================
+package Tests;
+
+import Pages.P03_HomePage;
+import Pages.P04_CartPage;
+import Pages.P05_BooksPage;
+import Utilities.DataUtil;
+import Utilities.LogUtils;
+import Utilities.Utilities;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+import Listeners.IInvokedMethodListenerClass;
+import Listeners.ITestMethodListenerClass;
+import java.io.IOException;
+import java.time.Duration;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+import static DriverFactory.DriverFactory.*;
+
+@Listeners({IInvoked.class, ITest.class})
+public class TC05_BooksTest {
+
+
+    public static By priceOfProduct = By.xpath("//span[contains(@class,'actual-price')]");
+    public static By productsBox = By.className("item-box");
+    public static By productsGrid = By.className("product-grid");
+    public static By productsList = By.className("product-list");
+    public static By notificationBar = By.id("bar-notification");
+
+    @BeforeMethod
+    public void browserSetup() throws IOException {
+        String browser = System.getProperty("Browser") != null ? System.getProperty("Browser") : DataUtil.getPropertyValue("environments", "Browser");
+        LogUtils.info(System.getProperty("Browser"));
+        setUpBrowser(browser);
+        LogUtils.info("Chrome is now opened");
+        getDriver().get(DataUtil.getPropertyValue("environments", "Login_page"));
+        LogUtils.info("Page is redirected to the URL");
+        getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        Utilities.login(getDriver());
+    }
+
+    @Test(priority = 2)
+    public void checkPricesAfterSortingTC() throws InterruptedException, IOException {
+        new P03_HomePage(getDriver()).selectCategory("books");
+        new P05_BooksPage(getDriver()).selectSortBy("Price: High to Low");
+        List<WebElement> priceElementsAfterSelect = getDriver().findElements(priceOfProduct);
+        //Extracting actual prices of elements
+        List<Double> actualPrices = new ArrayList<>();
+        for(WebElement priceElement : priceElementsAfterSelect) {
+            String priceText = priceElement.getText();
+            actualPrices.add(Double.parseDouble(priceText));
+        }
+        //make a copy of actual prices in another list and sort the copy then comparing them
+        List<Double> expectedPrices= new ArrayList<>(actualPrices);
+        expectedPrices.sort(Collections.reverseOrder());
+        LogUtils.info("Actual Prices after sorting: " + actualPrices);
+        LogUtils.info("Expected Prices after sorting: " + expectedPrices);
+        Utilities.takeScreenshot(getDriver(), "PricesAfterSorting");
+        Assert.assertEquals(expectedPrices,actualPrices);
+    }
+
+    @Test(priority = 3)
+    public void checkProductsCountAfterSortingTC() throws IOException {
+        new P03_HomePage(getDriver()).selectCategory("books");
+        new P05_BooksPage(getDriver()).selectDisplayPerPage("4");
+        List<WebElement> displayedProducts = getDriver().findElements(productsBox);
+        LogUtils.info("Number of products displayed: " + displayedProducts.size());
+        Utilities.takeScreenshot(getDriver(), "ProductsCountAfterSorting");
+        Assert.assertEquals(displayedProducts.size(), 4);
+    }
+
+    @Test(priority = 4)
+    public void viewAsFeatureTC() throws IOException {
+        WebElement grid = Utilities.byToWebElement(getDriver(),productsGrid);
+        new P03_HomePage(getDriver()).selectCategory("books");
+        new P05_BooksPage(getDriver()).selectViewAs("List");
+        boolean gridNotVisible = Utilities.generalWait(getDriver()).until(ExpectedConditions.invisibilityOf(grid));
+        LogUtils.info("Grid view is not visible: " + gridNotVisible);
+        Utilities.takeScreenshot(getDriver(), "ViewAsFeatureGridNotVisible");
+        Assert.assertTrue(gridNotVisible);
+
+        WebElement list = Utilities.byToWebElement(getDriver(),productsList);
+        new P05_BooksPage(getDriver()).selectViewAs("Grid");
+        boolean listNotVisible = new WebDriverWait(getDriver(),Duration.ofSeconds(5))
+                .until(ExpectedConditions.invisibilityOf(list));
+        LogUtils.info("List view is not visible: " + listNotVisible);
+        Utilities.takeScreenshot(getDriver(), "ViewAsFeatureListNotVisible");
+        Assert.assertTrue(listNotVisible);
+    }
+
+    @Test(priority = 1)
+    public void addProductToCartTC() throws IOException {
+        new P03_HomePage(getDriver()).selectCategory("books");
+        new P05_BooksPage(getDriver()).clickAddToCartButton().getNumberOnCartIcon();
+        LogUtils.info("Number on cart icon before adding items is: " + new P05_BooksPage(getDriver()).getNumberOnCartIcon());
+        Utilities.generalWait(getDriver()).until(ExpectedConditions.visibilityOfElementLocated(notificationBar));
+        String notificationText = Utilities.getElementText(getDriver(),notificationBar);
+        LogUtils.info("Notification text: " + notificationText);
+        LogUtils.info("Number on cart icon after adding items is: "
+                + new P05_BooksPage(getDriver()).getNumberOnCartIcon());
+        Utilities.takeScreenshot(getDriver(), "ProductAddedToCart");
+        Assert.assertTrue(notificationText.contains("The product has been added to your shopping cart"));
+
+        // clear cart
+        getDriver().get(DataUtil.getPropertyValue("environments", "Cart_page"));
+        new P04_CartPage(getDriver()).clearCart();
+    }
+
+    @AfterMethod
+    public void quitBrowser() {
+        quitDriver();
+    }
+}
+
+
+============================================================
+FILE: src/test/java/Tests/TC06_CheckoutTest.java
+============================================================
+package Tests;
+
+import Pages.P06_CheckoutPage;
+import Utilities.DataUtil;
+import Utilities.Utilities;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+import Utilities.LogUtils;
+import java.io.IOException;
+import java.time.Duration;
+import Listeners.IInvokedMethodListenerClass;
+import Listeners.ITestMethodListenerClass;
+import static DriverFactory.DriverFactory.*;
+
+@Listeners({IInvoked.class, ITest.class})
+public class TC06_CheckoutTest {
+
+    @BeforeMethod
+    public void browserSetup() throws IOException {
+        String browser = System.getProperty("Browser") != null ? System.getProperty("Browser") : DataUtil.getPropertyValue("environments", "Browser");
+        LogUtils.info(System.getProperty("Browser"));
+        setUpBrowser(browser);
+        LogUtils.info("Chrome is now opened");
+        getDriver().get(DataUtil.getPropertyValue("environments", "Login_page"));
+        LogUtils.info("Page is redirected to the URL");
+        getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        Utilities.login(getDriver());
+        new Pages.P03_HomePage(getDriver())
+                .selectCategory("jewelry")
+                .addNecklaceToCart()
+                .openCartPage()
+                .clickOnAcceptTermsCheckBox()
+                .clickCheckoutButton();
+        LogUtils.info("Browser setup completed and user logged in successfully");
+        LogUtils.info("Navigated to Jewelry category and added Necklace to cart");
+    }
+
+    @Test(priority = 1)
+    public void fillingDataTest() throws IOException {
+        try {
+            Utilities.fillingDataWithSelectNewAddress(getDriver());
+            LogUtils.info("Filled in shipping address details");
+            LogUtils.info("Continuing to next step in checkout process");
+        }
+        catch (NoSuchElementException e){
+            Utilities.fillingDataWithoutSelectNewAddress(getDriver());
+            LogUtils.info("Filled in shipping address details");
+            LogUtils.info("Continuing to next step in checkout process");
+        }
+        Boolean shippingAddressDisplayed = Utilities.byToWebElement(getDriver(), P06_CheckoutPage.storePickup)
+                .isDisplayed();
+        Assert.assertTrue(shippingAddressDisplayed, "Back button is not displayed after checkout");
+        LogUtils.info("Back button is displayed after checkout");
+        Utilities.takeScreenshot(getDriver(), "ShippingAddressDetailsScreenshot");
+        // Clear cart after checking out
+        Utilities.clearCart(getDriver());
+    }
+
+    @Test(priority = 2)
+    public void clickContinueButtonWithoutFillingData() throws IOException {
+        new Pages.P06_CheckoutPage(getDriver()).selectNewAddressOption()
+                .clickContinueButton();
+        LogUtils.info("Clicked continue button without filling data");
+        Boolean errorMsgDisplayed = Utilities.byToWebElement(getDriver(), P06_CheckoutPage.errorMsgLocator)
+                .isDisplayed();
+        LogUtils.info("Error message displayed: " + errorMsgDisplayed);
+        Assert.assertTrue(errorMsgDisplayed);
+        Utilities.takeScreenshot(getDriver(), "ErrorMessageCheckoutPageScreenshot");
+        // Clear cart after checking out
+        Utilities.clearCart(getDriver());
+    }
+
+    @Test(priority = 3)
+    public void checkoutTest() throws IOException {
+
+        Utilities.fillingDataWithSelectNewAddress(getDriver())
+                .clickContinueButton2()
+                .selectNextDayAir()
+                .clickContinueButton3()
+                .clickContinueButton4()
+                .clickContinueButton5()
+                .clickContinueButton6();
+        LogUtils.info("Filled in shipping address details");
+        LogUtils.info("Completed all steps in checkout process");
+        LogUtils.info("Order confirmation message should be displayed now");
+
+            Utilities.generalWait(getDriver()).until(ExpectedConditions.elementToBeClickable(P06_CheckoutPage.orderConfirmedMsgLocator));
+        Assert.assertEquals(getDriver().getCurrentUrl(), DataUtil.getPropertyValue("environments",
+                "checkOut_Complete_page"));
+        LogUtils.info("Checkout completed successfully, user is on the order confirmation page");
+        Utilities.takeScreenshot(getDriver(), "Checkout complete page screenshot");
+    }
+
+    @Test(priority = 4)
+    public void checkBackButtonWhileCheckingOutTest() throws IOException {
+        Utilities.fillingDataWithSelectNewAddress(getDriver())
+                .clickBackButton();
+        LogUtils.info("Filled in shipping address details");
+        LogUtils.info("Clicked back button while checking out");
+        Boolean buttonIsDisplayed = Utilities.byToWebElement(getDriver(),P06_CheckoutPage.continueButton).isDisplayed();
+        LogUtils.info("Continue button is displayed after clicking back: " + buttonIsDisplayed);
+        Assert.assertTrue(buttonIsDisplayed);
+        Utilities.takeScreenshot(getDriver(), "BackButtonCheckoutPageScreenshot");
+    }
+
+    @Test(priority = 5)
+    public void viewOrderDetailsTC() throws IOException {
+        Utilities.fillingDataWithSelectNewAddress(getDriver())
+                .clickContinueButton2()
+                .selectNextDayAir()
+                .clickContinueButton3()
+                .clickContinueButton4()
+                .clickContinueButton5()
+                .clickContinueButton6()
+                .clickOrderDetailsLink();
+        LogUtils.info("Filled in shipping address details");
+        LogUtils.info("Clicked on order details link after completing checkout");
+
+        String orderNumber = new P06_CheckoutPage(getDriver()).getOrderNumber();
+        LogUtils.info("Order number retrieved: " + orderNumber);
+
+        boolean isDisplayed = Utilities.byToWebElement(getDriver(), P06_CheckoutPage.orderInformationTitle)
+                .isDisplayed();
+        LogUtils.info("Order information title is displayed: " + isDisplayed);
+
+        Assert.assertTrue(isDisplayed, "Order information title is not visible");
+
+        Assert.assertEquals(getDriver().getCurrentUrl(),
+                DataUtil.getPropertyValue("environments", "Order_details_page")+ orderNumber);
+        LogUtils.info("User is redirected to order details page successfully");
+        Utilities.takeScreenshot(getDriver(), "Order details page screenshot");
+    }
+
+    @Test(priority = 6)
+    public void hitReOrder() throws IOException {
+        Utilities.fillingDataWithSelectNewAddress(getDriver())
+                .clickContinueButton2()
+                .selectNextDayAir()
+                .clickContinueButton3()
+                .clickContinueButton4()
+                .clickContinueButton5()
+                .clickContinueButton6()
+                .clickOrderDetailsLink()
+                .clickReOrderButton();
+        LogUtils.info("Filled in shipping address details");
+        LogUtils.info("Clicked on Re-order button after viewing order details");
+
+        Assert.assertEquals(getDriver().getCurrentUrl(), DataUtil.getPropertyValue("environments", "Cart_page"));
+        LogUtils.info("Re-order button clicked successfully, user is redirected to cart page");
+        Utilities.takeScreenshot(getDriver(), "Re-order page screenshot");
+        // Clear cart after checking out
+        Utilities.clearCart(getDriver());
+    }
+
+    @AfterMethod
+    public void quitBrowser(){
+        quitDriver();
+    }
+}
+
+
+============================================================
+FILE: src/test/resources/CustomerData.json
+============================================================
+{
+  "company" : "ITI",
+  "country" : "Egypt",
+  "city" : "Tanta",
+  "address1" : "EL-Helw st",
+  "address2" : "building 5",
+  "zipCode" : "12345",
+  "phoneNumber" : "0123456789",
+  "faxNumber" : "987654321"
+}
+
+============================================================
+FILE: src/test/resources/environments.properties
+============================================================
+Browser=chrome
+Register_page = https://demowebshop.tricentis.com/register
+Register_confirmation_page = https://demowebshop.tricentis.com/registerresult/1
+Login_page = https://demowebshop.tricentis.com/login
+Home_page = https://demowebshop.tricentis.com/
+Customer_info_page = https://demowebshop.tricentis.com/customer/info
+Cart_page = https://demowebshop.tricentis.com/cart
+checkout_page = https://demowebshop.tricentis.com/onepagecheckout
+checkOut_Complete_page = https://demowebshop.tricentis.com/checkout/completed/
+Order_details_page = https://demowebshop.tricentis.com/orderdetails/
+
+============================================================
+FILE: src/test/resources/LoginData.json
+============================================================
+{
+  "email" : "benik90219@binafex.com",
+  "password" : "Test@123",
+  "invalidEmail" : "user@@example.com",
+  "invalidPassword" : "short"
+}
+
+============================================================
+FILE: src/test/resources/RegistrationData.json
+============================================================
+{ "RegisterData" :
+  {
+  "registrationWithValidDataTC" : {
+    "firstname" : "Ibrahim",
+    "lastname" : "Deif" ,
+    "password" : "1234567" ,
+    "confirmedPassword" : "1234567"
+  },
+
+  "invalidPasswordLength" : {
+    "firstname" : "Ahmed",
+    "lastname" : "Ali" ,
+    "password" : "1" ,
+    "confirmedPassword" : "1"
+  },
+
+  "confirmedPasswordDoesNotMatch" : {
+    "firstname" : "Hamza",
+    "lastname" : "Ahmed" ,
+    "password" : "1234567" ,
+    "confirmedPassword" : "1"
+  },
+
+  "leaveFirstNameFieldEmpty" : {
+    "firstname" : "",
+    "lastname" : "Ali" ,
+    "password" : "1234567" ,
+    "confirmedPassword" : "1234567"
+  },
+  "wrongFormattedEmail": {
+    "firstname" : "Ibrahim",
+    "lastname" : "Deif" ,
+    "password" : "1234567" ,
+    "confirmedPassword" : "1234567"
+  }
+
+  }
+
+}
+
+============================================================
+FILE: src/test/Test-outputs/target/allure-results/environment.properties
+============================================================
+stagingEnv = https://demowebshop.tricentis.com/
+chrome_version = 138.0.7204.158
+Selenium_version = 4.34.0
+TestNG_version = 7.11.0
+Windows_version = 10.0
+
+============================================================
+FILE: src/Test Runner/Login.xml
+============================================================
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Demo Web Shop">
+    <test name="Functional Test for each page">
+        <classes>
+            <class name="Tests.TC02_LoginTest"/>
+        </classes>
+    </test>
+</suite>
+
+
+============================================================
+FILE: src/Test Runner/Test-Runner.xml
+============================================================
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Demo Web Shop">
+    <test name="Functional Test for each page">
+        <classes>
+            <class name="Tests.TC01_RegistrationTest"/>
+            <class name="Tests.TC02_LoginTest"/>
+            <class name="Tests.TC03_HomePageTest"/>
+            <class name="Tests.TC04_CartTest"/>
+            <class name="Tests.TC05_BooksTest"/>
+            <class name="Tests.TC06_CheckoutTest"/>
+        </classes>
+    </test>
+    </suite>
+
+
+============================================================
+FILE: package.json
+============================================================
+{
+  "dependencies": {
+    "codetxt": "^1.0.1"
+  }
+}
+
+
+============================================================
+FILE: pom.xml
+============================================================
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>Web_automation_graduation_Project</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <seleniumVersion>4.34.0</seleniumVersion>
+        <testNGVersion>7.11.0</testNGVersion>
+        <slf4jVersion>2.0.17</slf4jVersion>
+        <slf4jVersionAPI>2.0.17</slf4jVersionAPI>
+        <log4jVersion>2.23.0</log4jVersion>
+        <gsonVersion>2.13.1</gsonVersion>
+        <allure.version>2.25.0</allure.version>
+        <javaFaker>1.0.2</javaFaker>
+        <surefire>3.2.5</surefire>
+        <aspectj.version>1.9.21.1</aspectj.version>
+        <commonIO>2.15.0</commonIO>
+        <shutterBugVersion>1.6</shutterBugVersion>
+        <allureMaven>2.12.0</allureMaven>
+        <allureApi.version>2.27.0</allureApi.version>
+        <suite.login>src/Test Runner/Login.xml</suite.login>
+        <suite.regression>src/Test Runner/Test-Runner.xml</suite.regression>
+    </properties>
+    <build>
+        <directory>test-output/target</directory>
+        <plugins>
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>${allureMaven}</version>
+                <executions>
+                    <execution>
+                        <phase>test</phase>
+
+                    </execution>
+                </executions>
+                <configuration>
+                    <reportVersion>${allure.version}</reportVersion>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${surefire}</version>
+                <configuration>
+                    <argLine>
+                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                    </argLine>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>
+                            ${suite.regression}
+                        </suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
+
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>RegressionProfile</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>io.qameta.allure</groupId>
+                        <artifactId>allure-maven</artifactId>
+                        <configuration>
+                            <reportVersion>${allure.version}</reportVersion>
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <configuration>
+                            <suiteXmlFiles>
+                                <suiteXmlFile>
+                                    ${suite.regression}
+                                </suiteXmlFile>
+                            </suiteXmlFiles>
+                        </configuration>
+                    </plugin>
+
+                </plugins>
+            </build>
+
+        </profile>
+
+        <profile>
+            <id>LoginProfile</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>io.qameta.allure</groupId>
+                        <artifactId>allure-maven</artifactId>
+                        <configuration>
+                            <reportVersion>${allure.version}</reportVersion>
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <configuration>
+                            <suiteXmlFiles>
+                                <suiteXmlFile>
+                                    ${suite.login}
+                                </suiteXmlFile>
+                            </suiteXmlFiles>
+                        </configuration>
+                    </plugin>
+
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${aspectj.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-plugin-api -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-plugin-api</artifactId>
+            <version>${allureApi.version}</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>${javaFaker}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>${allure.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4jVersion}</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${commonIO}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4jVersionAPI}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${seleniumVersion}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testNGVersion}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>${slf4jVersion}</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>${gsonVersion}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>
